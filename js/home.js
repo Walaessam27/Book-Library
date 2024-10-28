@@ -1,6 +1,6 @@
 let swiperHome = new Swiper(".home-swiper", {
   loop: true,
-  spaceBetween: -40,
+  spaceBetween: -24,
   grabCursor: true,
   slidesPerView: "auto",
   centeredSlides: "auto",
@@ -10,7 +10,7 @@ let swiperHome = new Swiper(".home-swiper", {
   },
   breakpoints: {
     1120: {
-      spaceBetween: -48,
+      spaceBetween: -32,
     },
   },
 });

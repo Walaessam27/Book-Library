@@ -4,14 +4,11 @@
 /*------------------------------------ HOME SECTION ---------------------------------------*/
 .home-swiper {
   margin: initial;
-  --background-color: aquamarine;
 }
 
 .home-container {
-  padding-top: 1rem;
+  --padding-top: 1rem;
   row-gap: 2.5rem;
-  background-color: aqua;
-  display: flex;
 }
 
 .home-data {
@@ -20,6 +17,7 @@
 
 .home-title {
   font-size: var(--bigest-font-size);
+  font-weight: var(--font-semi-bold);
   margin-bottom: 1rem;
 }
 
@@ -30,34 +28,38 @@
 
 .home-images {
   display: grid;
+  gap: 100px;
 }
 
 .home-article,
 .home-image {
   width: 220px;
   transition: scale 0.4s;
-  box-shadow: -12px 5px 20px -8px rgba(0, 0, 0, 0.253);
   border-radius: 10px;
 }
 
+.home-image {
+  box-shadow: -12px 5px 20px -8px rgba(0, 0, 0, 0.253);
+}
+
 .home-article {
-  scale: 0.6;
+  scale: 0.7;
 }
 
 .swiper-slide-active,
 .swiper-slide-duplicate-active {
-  scale: 0.7;
+  scale: 0.9;
 }
 
 /*------------------------------------ RESPONSIVE ---------------------------------------*/
-@media screen and (min-width: 576px) {
+@media (min-width: 576px) {
   .home-container {
-    grid-template-columns: 420px;
+    grid-template-columns: 550px;
     justify-content: center;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 630px) {
   .home-container {
     grid-template-columns: 580px;
   }
@@ -68,7 +70,7 @@
   }
 }
 
-@media screen and (max-width: 1220px) {
+@media (min-width: 1220px) {
   .home-container {
     grid-template-columns: 435px 745px;
     align-items: center;
@@ -77,8 +79,12 @@
   .home-data {
     text-align: initial;
   }
+  .home-title {
+    font-size: 3rem;
+  }
   .home-description {
     margin-bottom: 4rem;
+    font-size: 1.2rem;
   }
   .home-article,
   .home-image {

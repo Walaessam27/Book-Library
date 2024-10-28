@@ -67,9 +67,7 @@ button {
 
 body {
   background-color: var(--color-body);
-  --background-color: #e4edfc;
   color: #000000;
-  --transition: background-color 0.4s;
 }
 
 input,
@@ -84,7 +82,6 @@ h3,
 h4 {
   font-family: var(--font);
   font-weight: var(--font-medium);
-  --color: var(--color-orange);
 }
 
 ul {
@@ -124,20 +121,17 @@ img {
 /*------------------------------------ REUSABLE CLASSE ---------------------------------------*/
 
 .container {
-  max-width: 1220px;
+  --max-width: 1220px;
   margin-inline: 1.5rem;
-  --background-color: #655c87;
 }
 
 .grid {
   display: grid;
-  --grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  --background-color: #7e676e;
+  gap: 5rem;
 }
 
 .section {
-  padding-block: 5rem 1rem;
+  padding-block: 2rem 0rem;
 }
 
 .section-title {
@@ -153,7 +147,7 @@ img {
 
 .button {
   display: inline-block;
-  background-color: #afd1d5;
+  background-color: #6fcde6;
   color: white;
   border-radius: 10px;
   padding: 1rem;
@@ -167,28 +161,43 @@ img {
 }
 
 /*------------------------------------ RESPONSIVE ---------------------------------------*/
-@media screen and (max-width: 320px) {
+@media (max-width: 320px) {
   .container {
     margin-inline: 1rem;
   }
-}
-
-/* @media screen and (min-width: 450px) {
-  .container {
-    margin-inline: 1rem;
+  .section {
+    padding-block: 5rem 0rem;
   }
-} */
-
-@media screen and (min-width: 576px) {
 }
 
-@media screen and (max-width: 1150px) {
+@media (min-width: 320px) {
+  .section {
+    padding-block: 5rem 0rem;
+  }
+}
+
+@media (min-width: 450px) {
+  .section {
+    padding-block: 5rem 0rem;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 1023px) {
+  .section {
+    padding-block: 5rem 0rem;
+  }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 1150px) {
   .section {
     padding-block: 7rem 2rem;
   }
 }
 
-@media screen and (max-width: 1220px) {
+@media (min-width: 1220px) {
   .container {
     margin-inline: auto;
   }
