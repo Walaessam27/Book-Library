@@ -3,9 +3,243 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Booknest</title>
+    <!---------------------- ICONS -------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.css"
+    />
+    <!---------------------- SWIPER CSS -------------------->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <!---------------------- CSS FOLDER -------------------->
+    <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
-    Test Changes
+    <!---------------------- Start Of Header -------------------->
+    <header class="header" id="header">
+      <!-------------------- LARGE SCREEN NAVBAR ---------------->
+      <nav class="nav-large-screen nav-container">
+        <!---------- LOGO ---------->
+        <a href="#" class="nav-logo">Booknest</a>
+        <!---------- MENU ---------->
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">My Books </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Genres </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Discover <span style="font-size: 18px">&#11206;</span></a
+              >
+              <ul class="discover-dropdown">
+                <div class="discover-dropdown-links">
+                  <li><a href="#">Genres</a></li>
+                  <li><a href="#">New Releases</a></li>
+                  <li><a href="#">Lists</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">News & Interviews</a></li>
+                </div>
+                <div class="discover-dropdown-favoriteGenres">
+                  <h4>Favorite Genres</h4>
+                  <li><a href="#">Fantasy</a></li>
+                  <li><a href="#">Fiction</a></li>
+                  <li><a href="#">Psychology</a></li>
+                  <li><a href="#">Self Help</a></li>
+                  <li><a href="#">All Genres</a></li>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Blog </a>
+            </li>
+          </ul>
+        </div>
+        <!------- RIGHT SIDE ------->
+        <div class="nav-right">
+          <a href="#" class="nav-link">
+            <i class="ri-user-line"></i>
+            <span>Login</span>
+          </a>
+          <div class="nav-divider"></div>
+          <div class="profile-pic">
+            <img src="./assets/profilePic.png" alt="profile-pic" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-------------------- MEDIUM SCREEN NAVBAR ----------------->
+    <div class="nav-medium-screen">
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">My Books </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#" class="nav-link"> Genres </a>
+          </li> -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Discover <span style="font-size: 18px">&#11206;</span></a
+            >
+            <!-- <ul class="discover-dropdown">
+              <div class="discover-dropdown-links">
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">Lists</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">News & Interviews</a></li>
+              </div>
+              <div class="discover-dropdown-favoriteGenres">
+                <h4>Favorite Genres</h4>
+                <li><a href="#">Fantasy</a></li>
+                <li><a href="#">Fiction</a></li>
+                <li><a href="#">Psychology</a></li>
+                <li><a href="#">Cookbooks</a></li>
+                <li><a href="#">Self Help</a></li>
+                <li><a href="#">All Genres</a></li>
+              </div>
+            </ul> -->
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Blog </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-------------------- SMALL SCREEN NAVBAR ------------------>
+    <div class="nav-small-screen">
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="ri-home-3-line"></i>
+              <!-- <span>Home</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="ri-bookmark-2-line"></i>
+              <!-- <span>My Books</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="ri-compass-line"></i>
+              <!-- <span>Discover</span> -->
+            </a>
+            <ul class="discover-dropdown">
+              <div class="discover-dropdown-links">
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">Lists</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">News & Interviews</a></li>
+              </div>
+              <div class="discover-dropdown-favoriteGenres">
+                <h4>Favorite Genres</h4>
+                <li><a href="#">Fantasy</a></li>
+                <li><a href="#">Fiction</a></li>
+                <li><a href="#">Psychology</a></li>
+                <li><a href="#">Cookbooks</a></li>
+                <li><a href="#">Self Help</a></li>
+                <li><a href="#">All Genres</a></li>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="ri-search-line"></i>
+              <!-- <span>Search</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="ri-menu-line"></i>
+              <!-- <span>More</span> -->
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!---------------------- End Of Header ---------------------->
+    <!-- <div
+      style="
+        background-color: rebeccapurple;
+        position: relative;
+        top: 100px;
+        height: 600px;
+      "
+    ></div>
+    <div
+      style="
+        background-color: rgb(53, 51, 153);
+        position: relative;
+        top: 30px;
+        height: 600px;
+      "
+    ></div> -->
+    <main>
+      <div class="home section" id="home">
+        <div class="home-container container grid">
+          <div class="home-data">
+            <h1 class="home-title">Discover the world of books</h1>
+            <p class="home-description">
+              Booknest is a digital platform that connects book lovers and
+              encourages them to share their favorite books. Our mission is to
+              help people discover new books, share insights, and find new
+              friends to read with.
+            </p>
+            <a href="#" class="button">Explore Now</a>
+          </div>
+          <div class="home-images">
+            <div class="home-swiper swiper">
+              <div class="swiper-wrapper">
+                <article class="home-article swiper-slide">
+                  <img
+                    src="./assets/homePage/homeSection/book1.webp"
+                    alt="book-image"
+                    class="home-image"
+                  />
+                </article>
+                <article class="home-article swiper-slide">
+                  <img
+                    src="./assets/homePage/homeSection/book2.webp"
+                    alt="book-image"
+                    class="home-image"
+                  />
+                </article>
+                <article class="home-article swiper-slide">
+                  <img
+                    src="./assets/homePage/homeSection/book4.webp"
+                    alt="book-image"
+                    class="home-image"
+                  />
+                </article>
+                <article class="home-article swiper-slide">
+                  <img
+                    src="./assets/homePage/homeSection/book3.webp"
+                    alt="book-image"
+                    class="home-image"
+                  />
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <!---------------------- SWIPER JS -------------------->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="./js/home.js"></script>
   </body>
 </html>
