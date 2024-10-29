@@ -195,17 +195,7 @@ font-size: 17px;
     color: #005a8b;
     transition: color 0.3s ease;
 }
-/* @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
 
-.child2 .card:hover {
-    animation: pulse 0.5s infinite;
-    transition: transform 0.3s;
-    transform: translateY(-5px);
-} */
 
 .card:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -229,17 +219,20 @@ font-size: 17px;
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
 }
 /* لأجهزة الحاسوب الكبيرة - شاشة العرض الافتراضية */
-/* @media (max-width: 1200px) {
+@media (max-width: 1090px) {
     .child1, .child2 {
       width: 80%;
     }
-    .child1 .about {
-        font-size: 14px;
-    }
+    .child1 .about , .child1 .Nation , .child1 .date , .child4 p ,.child2 p {
+      font-size: 21px;
+      margin: 23px;
+        }
+      
     .child4 {
       width: 100%;
+      margin-top: 11px !important;
     }
-  } */
+  }
   
   /* لأجهزة الحاسوب المتوسطة مثل اللابتوبات */
   @media (max-width: 992px) {
@@ -247,8 +240,17 @@ font-size: 17px;
       width: 90%;
       left: 5%;
     }
+    .child1 .about , .child1 .Nation , .child1 .date , .child4 p ,.child2 p {
+      font-size: 18px;
+      margin: 23px;
+        }
+
     .child1 h1 {
       font-size: 40px; /* تصغير حجم النص قليلاً */
+      left: 29%;
+    }
+    .child4 {
+      margin-top: 11px;
     }
   }
   
@@ -262,11 +264,19 @@ font-size: 17px;
     .child1 h1 {
       font-size: 32px; /* تصغير حجم النص */
     }
+
+    .child2 p {
+      font-size: 16px;
+      margin: 1px !important;
+        }
     .child1 img {
       max-width: 100px; /* تقليص حجم الصورة */
     }
     .child2 {
-      top: 60%; /* تقليص المسافة بين العناصر */
+      top: 75%; /* تقليص المسافة بين العناصر */
+    }
+    .child4 {
+      margin-top: 11px;
     }
   }
   
@@ -282,17 +292,24 @@ font-size: 17px;
     .child1 img {
       max-width: 80px;
     }
-    .child1 .about, .child1 .Nation, .child1 .date {
-      font-size: 14px; /* تصغير حجم النص للمعلومات */
-    }
+    .child1 .about , .child1 .Nation , .child1 .date , .child4 p {
+      font-size: 11px;
+      /* margin: 23px; */
+        }
     .child2 {
-      top: 50%;
+      top: 28%;
+        height: 252vh;
     }
     .child4 {
       height: auto;
+      top: 203%;
+      margin-top: 92px !important;
     }
     .quote {
       font-size: 0.8rem; /* تصغير حجم النص للهواتف */
     }
+  
+    
+    
   }
   
