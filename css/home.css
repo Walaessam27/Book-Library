@@ -308,6 +308,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .news .recommended-for-this-week {
   display: flex;
   gap: 0rem;
@@ -375,8 +376,6 @@
 
 .news-books-book-card,
 .news-container .swiper-slide {
-  --height: 450px;
-  --padding: 1rem;
   border-radius: 10px;
   justify-content: center;
 }

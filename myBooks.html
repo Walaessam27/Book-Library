@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booknest</title>
+    <!---------------------- ICONS ------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.css"
+    />
+    <!---------------------- TOSTIFY CSS ------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <!---------------------- SWIPER CSS -------------------->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <!---------------------- CSS FOLDER -------------------->
+    <link rel="stylesheet" href="./css/library.css" />
+  </head>
+  <body>
+    <!---------------------- Start Of Header -------------------->
+    <header class="header" id="header">
+      <!-------------------- LARGE SCREEN NAVBAR ---------------->
+      <nav class="nav-large-screen nav-container">
+        <!---------- LOGO ---------->
+        <a href="#" class="nav-logo">Booknest</a>
+        <!---------- MENU ---------->
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a href="myBooks.html" class="nav-link">My Books </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Genres </a>
+            </li>
+            <li class="nav-item">
+              <a href="library.html" class="nav-link">
+                Discover <span style="font-size: 18px">&#11206;</span></a
+              >
+              <ul class="discover-dropdown">
+                <div class="discover-dropdown-links">
+                  <li><a href="#">Genres</a></li>
+                  <li><a href="#">New Releases</a></li>
+                  <li><a href="#">Lists</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">News & Interviews</a></li>
+                </div>
+                <div class="discover-dropdown-favoriteGenres">
+                  <h4>Favorite Genres</h4>
+                  <li><a href="#">Fantasy</a></li>
+                  <li><a href="#">Fiction</a></li>
+                  <li><a href="#">Psychology</a></li>
+                  <li><a href="#">Self Help</a></li>
+                  <li><a href="#">All Genres</a></li>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Blog </a>
+            </li>
+          </ul>
+        </div>
+        <!------- RIGHT SIDE ------->
+        <div class="nav-right">
+          <!-- <a href="#" class="nav-link">
+              <i class="ri-user-line"></i>
+              <span>Login</span>
+            </a>
+            <div class="nav-divider"></div> -->
+          <a href="profile.html" class="profile-pic">
+            <img src="./assets/profilePic.png" alt="profile-pic" />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-------------------- MEDIUM SCREEN NAVBAR ----------------->
+    <div class="nav-medium-screen">
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="myBooks.html" class="nav-link">My Books </a>
+          </li>
+          <!-- <li class="nav-item">
+              <a href="#" class="nav-link"> Genres </a>
+            </li> -->
+          <li class="nav-item">
+            <a href="library.html" class="nav-link">
+              Discover <span style="font-size: 18px">&#11206;</span></a
+            >
+            <!-- <ul class="discover-dropdown">
+                <div class="discover-dropdown-links">
+                  <li><a href="#">Genres</a></li>
+                  <li><a href="#">New Releases</a></li>
+                  <li><a href="#">Lists</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">News & Interviews</a></li>
+                </div>
+                <div class="discover-dropdown-favoriteGenres">
+                  <h4>Favorite Genres</h4>
+                  <li><a href="#">Fantasy</a></li>
+                  <li><a href="#">Fiction</a></li>
+                  <li><a href="#">Psychology</a></li>
+                  <li><a href="#">Cookbooks</a></li>
+                  <li><a href="#">Self Help</a></li>
+                  <li><a href="#">All Genres</a></li>
+                </div>
+              </ul> -->
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Blog </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-------------------- SMALL SCREEN NAVBAR ------------------>
+    <div class="nav-small-screen">
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="ri-home-3-line"></i>
+              <!-- <span>Home</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="myBooks.html" class="nav-link">
+              <i class="ri-bookmark-2-line"></i>
+              <!-- <span>My Books</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="library.html" class="nav-link">
+              <i class="ri-compass-line"></i>
+              <!-- <span>Discover</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="library.html" class="nav-link">
+              <i class="ri-search-line"></i>
+              <!-- <span>Search</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="ri-menu-line"></i>
+              <!-- <span>More</span> -->
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!---------------------- End Of Header ---------------------->
+    <main class="main">
+      <section class="library" id="library">
+        <div class="library-container container">
+          <h1 class="library-title">Read anywhere. Anytime.</h1>
+          <p class="library-description">
+            Welcome to Booknest, where you can discover and read books from all
+            over the world. Our library has an extensive collection of books,
+            from classic novels to contemporary bestsellers.
+          </p>
+          <div class="search-bar">
+            <input type="text" placeholder="Search for books" />
+            <button type="submit">
+              <i class="ri-search-line"></i>
+            </button>
+          </div>
+          <!-- <div class="library-data">
+            <div class="library-container container grid"></div>
+            <div class="library-image">
+              <img src="./assets/library.jpg" alt="library" />
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <!---------------------- TOSTIFY JS ------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/myBooks.js"></script>
+  </body>
+</html>
