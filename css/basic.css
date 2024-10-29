@@ -68,6 +68,7 @@ button {
 body {
   background-color: var(--color-body);
   color: #000000;
+  text-shadow: 0.7px 0.7px 0.7px #2c242344;
 }
 
 input,
@@ -127,7 +128,7 @@ img {
 
 .grid {
   display: grid;
-  gap: 5rem;
+  gap: 10rem;
 }
 
 .section {
