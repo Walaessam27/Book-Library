@@ -40,6 +40,12 @@
   margin-bottom: 1.5rem;
 }
 
+#add-book-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form {
   display: flex;
   gap: 1rem;
@@ -189,6 +195,7 @@
     margin-top: 5rem;
     margin-bottom: 5rem;
     width: 330px;
+    align-items: center;
   }
   .form {
     flex-direction: column;
@@ -200,5 +207,8 @@
 
   .form-element {
     width: 100%;
+  }
+  .form-element #add-book-btn {
+    margin-left: 45px;
   }
 }
