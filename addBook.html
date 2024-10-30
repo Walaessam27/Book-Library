@@ -17,7 +17,7 @@
     <!---------------------- SWIPER CSS -------------------->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <!---------------------- CSS FOLDER -------------------->
-    <link rel="stylesheet" href="./css/library.css" />
+    <link rel="stylesheet" href="./css/addBook.css" />
   </head>
   <body>
     <!---------------------- Start Of Header -------------------->
@@ -158,32 +158,84 @@
       </div>
     </div>
     <!---------------------- End Of Header ---------------------->
-    <main class="main">
-      <section class="library" id="library">
-        <div class="library-container container">
-          <h1 class="library-title">Read anywhere. Anytime.</h1>
-          <p class="library-description">
-            Welcome to Booknest, where you can discover and read books from all
-            over the world. Our library has an extensive collection of books,
-            from classic novels to contemporary bestsellers.
-          </p>
-          <div class="search-bar">
-            <input type="text" placeholder="Search for books" />
-            <button type="submit">
-              <i class="ri-search-line"></i>
-            </button>
-          </div>
-          <!-- <div class="library-data">
-            <div class="library-container container grid"></div>
-            <div class="library-image">
-              <img src="./assets/library.jpg" alt="library" />
+    <main>
+      <section class="add-book" id="add-book">
+        <div class="add-book-container container">
+          <div class="add-book-popup">
+            <div class="popup-close-btn"><i class="ri-close-line"></i></div>
+            <h1>Add New Book</h1>
+            <div class="form">
+              <div class="form-left">
+                <div class="form-row">
+                  <div class="form-element">
+                    <label for="book-title">Book Title</label>
+                    <input type="text" id="book-title" required />
+                  </div>
+                  <div class="form-element">
+                    <label for="book-author">Author Name</label>
+                    <input type="text" id="book-author" required />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-element">
+                    <label for="book-pages">Pages</label>
+                    <input type="number" id="book-pages" required />
+                  </div>
+                  <div class="form-element">
+                    <label for="book-rating">Rating</label>
+                    <input type="number" id="book-rating" required />
+                  </div>
+                </div>
+                <div class="form-element">
+                  <label for="description">Description:</label>
+                  <textarea
+                    id="description"
+                    name="description"
+                    rows="1"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-element select-container">
+                  <label for="book-genre">Genre</label>
+                  <select id="book-genre" name="book-genre" multiple required>
+                    <option value="fiction">Fiction</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="science-fiction">Science Fiction</option>
+                    <option value="biography">Biography</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-right">
+                <div class="form-element">
+                  <label for="bookCover">Book Cover</label>
+                  <div class="book-cover-wrapper">
+                    <label for="bookCoverImage" class="upload-button"
+                      ><i class="ri-image-add-line"></i
+                    ></label>
+                    <input
+                      type="file"
+                      id="bookCoverImage"
+                      name="bookCoverImage"
+                      accept="image/*"
+                      required
+                      style="display: none"
+                    />
+                    <div id="bookCoverPreview" class="book-cover-preview"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div> -->
+            <div class="form-element">
+              <button type="submit" id="add-book-btn">Add Book</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <!---------------------- TOSTIFY JS ------------------------->
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="./js/myBooks.js"></script>
+    <script src="./js/addBook.js"></script>
   </body>
 </html>

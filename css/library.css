@@ -17,7 +17,6 @@
   padding-bottom: 5rem;
   padding-top: 3rem;
   border-bottom: solid 0.1px #fc500044;
-  --background-color: aqua;
 }
 
 .library-data {
@@ -27,18 +26,15 @@
 .library-title {
   font-size: 3rem;
   font-weight: var(--font-semi-bold);
-  --margin-bottom: 1rem;
 }
 
 .library-description {
   font-size: 2rem;
-  --margin-bottom: 2rem;
   margin: 0 2rem;
 }
 
 .search-bar {
   width: 50%;
-  --background-color: blue;
   margin-top: 2rem;
   position: relative;
 }
