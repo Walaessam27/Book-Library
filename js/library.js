@@ -30,7 +30,7 @@ function loadBooks() {
 }
 
 function viewBook(index) {
-  window.location.href = `addBook.html?bookId=${index}`;
+  window.location.href = `bookDetails.html?bookId=${index}`;
 }
 
 document.addEventListener("DOMContentLoaded", loadBooks);
