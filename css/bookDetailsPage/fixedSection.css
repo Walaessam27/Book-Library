@@ -1,0 +1,93 @@
+.fixed-section {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.fixed-section .book-cover {
+  width: 70%;
+  padding-top: 1rem;
+}
+
+.fixed-section .book-cover img {
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 4px 10px 23px -7px rgba(0, 0, 0, 0.75);
+  transition: 0.5s cubic-bezier(0.2, 0.5, 0.45, 0.9);
+}
+
+.fixed-section .book-cover img:hover {
+  scale: 1.05;
+}
+
+.fixed-section .add-to-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.fixed-section .add-to-list button {
+  width: 80%;
+  padding: 0.8rem;
+  text-align: center;
+  background-color: #2e867d;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  box-shadow: 4px 10px 23px -7px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+@media (max-width: 430px) {
+  .book-details-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 767px) {
+  .book-details-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fixed-section .book-cover {
+    width: 40%;
+    padding-top: 1rem;
+  }
+  .fixed-section .add-to-list {
+    width: 60%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .fixed-section .book-cover {
+    width: 30%;
+    padding-top: 1rem;
+  }
+  .fixed-section .add-to-list {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fixed-section {
+    position: fixed;
+    left: 2rem;
+    width: 25%;
+  }
+  .fixed-section .book-cover {
+    width: 65%;
+    padding-top: 1rem;
+  }
+  .fixed-section .add-to-list {
+    width: 95%;
+  }
+}

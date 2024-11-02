@@ -1,5 +1,5 @@
-@import "../css/header.css";
-@import "../css/basic.css";
+@import "./header.css";
+@import "./basic.css";
 
 /*------------------------------------ HOME SECTION ---------------------------------------*/
 .home-swiper {
@@ -661,6 +661,13 @@
   .home-data {
     width: 420px;
     justify-self: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .offers-container {
+    border-top: solid 0.1px #e4bebd77;
+    margin-top: 2rem;
   }
 }
 

@@ -4,31 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FableFolio</title>
-    <link rel="stylesheet" href="css/bookDetails.css" />
+    <!---------------------- ICONS ------------------------->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.css"
     />
-    <link rel="stylesheet" href="./css/bookDetails.css" />
+    <!---------------------- SWIPER CSS -------------------->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <!---------------------- CSS FOLDER -------------------->
+    <link rel="stylesheet" href="./css/bookDetailsPage/bookDetailsPage.css" />
   </head>
   <body>
-    <!-- Header -->
+    <!---------------------- Start Of Header -------------------->
     <header class="header" id="header">
+      <!-------------------- LARGE SCREEN NAVBAR ---------------->
       <nav class="nav-large-screen nav-container">
+        <!---------- LOGO ---------->
         <a href="#" class="nav-logo">FableFolio</a>
+        <!---------- MENU ---------->
         <div class="nav-menu">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="#" class="nav-link"> Home </a>
+              <a href="index.html" class="nav-link"> Home </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">My Books </a>
+              <a href="myBooks.html" class="nav-link">My Books </a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link"> Genres </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="library.html" class="nav-link">
                 Discover <span style="font-size: 18px">&#11206;</span></a
               >
               <ul class="discover-dropdown">
@@ -54,114 +60,501 @@
             </li>
           </ul>
         </div>
+        <!------- RIGHT SIDE ------->
         <div class="nav-right">
-          <a href="#" class="nav-link">
-            <i class="ri-user-line"></i>
-            <span>Login</span>
-          </a>
-          <div class="nav-divider"></div>
-          <div class="profile-pic">
+          <!-- <a href="#" class="nav-link">
+              <i class="ri-user-line"></i>
+              <span>Login</span>
+            </a>
+            <div class="nav-divider"></div> -->
+          <a href="profile.html" class="profile-pic">
             <img src="./assets/profilePic.png" alt="profile-pic" />
-          </div>
+          </a>
         </div>
       </nav>
     </header>
-
-    <!-- Main Content -->
+    <!-------------------- MEDIUM SCREEN NAVBAR ----------------->
+    <div class="nav-medium-screen">
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="myBooks.html" class="nav-link">My Books </a>
+          </li>
+          <!-- <li class="nav-item">
+              <a href="#" class="nav-link"> Genres </a>
+            </li> -->
+          <li class="nav-item">
+            <a href="library.html" class="nav-link">
+              Discover <span style="font-size: 18px">&#11206;</span></a
+            >
+            <!-- <ul class="discover-dropdown">
+                <div class="discover-dropdown-links">
+                  <li><a href="#">Genres</a></li>
+                  <li><a href="#">New Releases</a></li>
+                  <li><a href="#">Lists</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">News & Interviews</a></li>
+                </div>
+                <div class="discover-dropdown-favoriteGenres">
+                  <h4>Favorite Genres</h4>
+                  <li><a href="#">Fantasy</a></li>
+                  <li><a href="#">Fiction</a></li>
+                  <li><a href="#">Psychology</a></li>
+                  <li><a href="#">Cookbooks</a></li>
+                  <li><a href="#">Self Help</a></li>
+                  <li><a href="#">All Genres</a></li>
+                </div>
+              </ul> -->
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Blog </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-------------------- SMALL SCREEN NAVBAR ------------------>
+    <div class="nav-small-screen">
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="ri-home-3-line"></i>
+              <!-- <span>Home</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="myBooks.html" class="nav-link">
+              <i class="ri-bookmark-2-line"></i>
+              <!-- <span>My Books</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="library.html" class="nav-link">
+              <i class="ri-compass-line"></i>
+              <!-- <span>Discover</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="library.html" class="nav-link">
+              <i class="ri-search-line"></i>
+              <!-- <span>Search</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="ri-menu-line"></i>
+              <!-- <span>More</span> -->
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!---------------------- End Of Header ---------------------->
+    <!---------------------- Start Of Main ---------------------->
     <main>
       <div class="book-details">
-        <!-- Book Cover -->
-        <div class="book-cover">
-          <img src="./assets/bookDetailsPage/cover1.jpg" alt="Book Cover" />
-        </div>
-
-        <!-- Book Info -->
-        <div class="book-info">
-          <h2>Book Title</h2>
-          <p><strong>Author:</strong> نوال فريد</p>
-          <p><strong>Publication Date:</strong> 2024</p>
-          <p><strong>Genre:</strong> رواية</p>
-          <p>
-            <strong>Description:</strong> ..............................هذه
-            الرواية من كتابة نوال فريد تتحدث عن قصة فتاة تدعى ليلى
-          </p>
-
-          <!-- Actions -->
-          <div class="actions">
-            <button id="wishlist-btn">
-              Add to Wishlist <i class="ri-heart-line"></i>
-            </button>
-            <button id="read-btn">
-              Mark as Read <i class="ri-bookmark-line"></i>
-            </button>
+        <div class="book-details-container container">
+          <div class="fixed-section">
+            <div class="book-cover">
+              <img
+                src="./assets/homePage/newsSection/book4.jpg"
+                alt="Book Cover"
+              />
+            </div>
+            <div class="medium-small-screen">
+              <h1 class="book-title">The Berry Pickers</h1>
+              <h2 class="book-author">Amanda Peters</h2>
+              <div class="rating">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+            </div>
+            <div class="add-to-list">
+              <button>Want to read</button>
+            </div>
           </div>
-
-          <!-- Rating System -->
-          <div class="rating-system">
-            <i class="ri-star-fill" id="star-1"></i>
-            <i class="ri-star-fill" id="star-2"></i>
-            <i class="ri-star-fill" id="star-3"></i>
-            <i class="ri-star-fill" id="star-4"></i>
-            <i class="ri-star-fill" id="star-5"></i>
-            <span id="rating-value">4.5/5</span>
+          <div class="scroll-section">
+            <div class="book-info">
+              <h1 class="book-title">The Berry Pickers</h1>
+              <h2 class="book-author">Amanda Peters</h2>
+              <div class="rating">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i style="color: #c2c7cc" class="ri-star-fill"></i>
+                <i style="color: #c2c7cc" class="ri-star-fill"></i>
+                <span style="margin-left: 1rem; color: black">3.3</span>
+              </div>
+              <div class="book-description">
+                A four-year-old Mi’kmaq girl goes missing from the blueberry
+                fields of Maine, sparking a tragic mystery that haunts the
+                survivors, unravels a community, and remains unsolved for nearly
+                fifty years.
+              </div>
+              <div class="sub-description">
+                <p class="appeared-text">
+                  July 1962. A Mi’kmaq family from Nova Scotia arrives in Maine
+                  to pick blueberries for the summer.
+                </p>
+                <span>
+                  Weeks later, four-year-old Ruthie, the family’s youngest
+                  child, vanishes. She is last seen by her six-year-old brother,
+                  Joe, sitting on a favorite rock at the edge of a berry field.
+                  Joe will remain distraught by his sister’s disappearance for
+                  years to come.
+                </span>
+                <button>
+                  <p>Show more</p>
+                  <i class="ri-arrow-down-s-line"></i>
+                </button>
+              </div>
+              <div class="genres-container">
+                <h3>Genres</h3>
+                <div class="genres">
+                  <p>Mystery</p>
+                  <p>Crime</p>
+                  <p>Fiction</p>
+                </div>
+              </div>
+              <div class="pages">
+                <p>307 pages, Hardcover</p>
+                <p>First published April 4, 2023</p>
+              </div>
+            </div>
+            <div class="about-author-sec">
+              <h2>About the author</h2>
+              <div class="about-author">
+                <div class="left-sec">
+                  <img
+                    src="./assets/bookDetailsPage/author.jpg"
+                    alt="Author Avatar"
+                  />
+                  <div>
+                    <h3>Amanda Peters</h3>
+                    <p>2 books1,245 followers</p>
+                  </div>
+                </div>
+                <div class="right-sec">
+                  <button>follow</button>
+                </div>
+              </div>
+              <p class="author-description">
+                A British author known for her unique blend of historical
+                fiction, mystery, and romance. She has been best known for her
+                novel "The Berry Pickers," which follows the story of a Mi’kmaq
+                family in Maine.
+              </p>
+            </div>
+            <section class="news" id="news">
+              <div class="news-container container">
+                <div class="news-books swiper">
+                  <h2 style="margin: 1rem 0">Readers also enjoyed</h2>
+                  <div class="swiper-wrapper">
+                    <div class="news-books-book-card swiper-slide">
+                      <div class="card-content">
+                        <img
+                          src="./assets/homePage/newsSection/book1.jpg"
+                          alt="book-image"
+                          class="card-content-image"
+                        />
+                        <div class="card-content-data">
+                          <h1 class="book-title">Phantasma</h1>
+                          <h2 class="book-author">Kaylie Smith</h2>
+                          <div class="card-bottom">
+                            <i style="color: #e47b01" class="ri-star-fill"></i>
+                            <span>4.14</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-books-book-card swiper-slide">
+                      <div class="card-content">
+                        <img
+                          src="./assets/homePage/newsSection/book2.jpg"
+                          alt="book-image"
+                          class="card-content-image"
+                        />
+                        <div class="card-content-data">
+                          <h1 class="book-title">The Pumpkin Spice Café</h1>
+                          <h2 class="book-author">Laurie Gilmore</h2>
+                          <div class="card-bottom">
+                            <i style="color: #e47b01" class="ri-star-fill"></i>
+                            <span>3.4</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-books-book-card swiper-slide">
+                      <div class="card-content">
+                        <img
+                          src="./assets/homePage/newsSection/book3.jpg"
+                          alt="book-image"
+                          class="card-content-image"
+                        />
+                        <div class="card-content-data">
+                          <h1 class="book-title">Don't Let the Forest In</h1>
+                          <h2 class="book-author">C.G. Drews</h2>
+                          <div class="card-bottom">
+                            <i style="color: #e47b01" class="ri-star-fill"></i>
+                            <span>4.33</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-books-book-card swiper-slide">
+                      <div class="card-content">
+                        <img
+                          src="./assets/homePage/newsSection/book4.jpg"
+                          alt="book-image"
+                          class="card-content-image"
+                        />
+                        <div class="card-content-data">
+                          <h1 class="book-title">The Berry Pickers</h1>
+                          <h2 class="book-author">Amanda Peters</h2>
+                          <div class="card-bottom">
+                            <i style="color: #e47b01" class="ri-star-fill"></i>
+                            <span>4.05</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-books-book-card swiper-slide">
+                      <div class="card-content">
+                        <img
+                          src="./assets/homePage/newsSection/book5.jpg"
+                          alt="book-image"
+                          class="card-content-image"
+                        />
+                        <div class="card-content-data">
+                          <h1 class="book-title">Enchantra</h1>
+                          <h2 class="book-author">Kaylie Smith</h2>
+                          <div class="card-bottom">
+                            <i style="color: #e47b01" class="ri-star-fill"></i>
+                            <span>4.56</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-books-book-card swiper-slide">
+                      <div class="card-content">
+                        <img
+                          src="./assets/homePage/newsSection/book6.jpg"
+                          alt="book-image"
+                          class="card-content-image"
+                        />
+                        <div class="card-content-data">
+                          <h1 class="book-title">We Used to Live Here</h1>
+                          <h2 class="book-author">Marcus Kliewer</h2>
+                          <div class="card-bottom">
+                            <i style="color: #e47b01" class="ri-star-fill"></i>
+                            <span>3.77</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-books-book-card swiper-slide">
+                      <div class="card-content">
+                        <img
+                          src="./assets/homePage/newsSection/book7.jpg"
+                          alt="book-image"
+                          class="card-content-image"
+                        />
+                        <div class="card-content-data">
+                          <h1 class="book-title">Society of Lies</h1>
+                          <h2 class="book-author">Lauren Ling Brown</h2>
+                          <div class="card-bottom">
+                            <i style="color: #e47b01" class="ri-star-fill"></i>
+                            <span>3.58</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-books-book-card swiper-slide">
+                      <div class="card-content">
+                        <img
+                          src="./assets/homePage/newsSection/book8.jpg"
+                          alt="book-image"
+                          class="card-content-image"
+                        />
+                        <div class="card-content-data">
+                          <h1 class="book-title">Lights Out</h1>
+                          <h2 class="book-author">Navessa Allen</h2>
+                          <div class="card-bottom">
+                            <i style="color: #e47b01" class="ri-star-fill"></i>
+                            <span>4.28</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-books-book-card swiper-slide">
+                      <div class="card-content">
+                        <img
+                          src="./assets/homePage/newsSection/book9.jpg"
+                          alt="book-image"
+                          class="card-content-image"
+                        />
+                        <div class="card-content-data">
+                          <h1 class="book-title">Anathema</h1>
+                          <h2 class="book-author">Keri Lake</h2>
+                          <div class="card-bottom">
+                            <i style="color: #e47b01" class="ri-star-fill"></i>
+                            <span>4.14</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-books-book-card swiper-slide">
+                      <div class="card-content">
+                        <img
+                          src="./assets/homePage/newsSection/book10.jpg"
+                          alt="book-image"
+                          class="card-content-image"
+                        />
+                        <div class="card-content-data">
+                          <h1 class="book-title">The Housemaid</h1>
+                          <h2 class="book-author">Freida McFadden</h2>
+                          <div class="card-bottom">
+                            <i style="color: #e47b01" class="ri-star-fill"></i>
+                            <span>4.32</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </section>
+            <div class="rating-reviews-sec">
+              <h2>Ratings & Reviews</h2>
+              <div class="rating-reviews-cards">
+                <div class="rating-reviews-card">
+                  <div class="rating-reviews-card-left">
+                    <img
+                      src="./assets/bookDetailsPage/author.jpg"
+                      alt="rating-image"
+                    />
+                    <h4 class="rating-reviews-card-title">Larissa Cambusano</h4>
+                  </div>
+                  <div class="rating-reviews-card-right">
+                    <div style="display: flex; justify-content: space-between">
+                      <div class="user-rating">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                      </div>
+                      <div style="font-size: 0.9rem">October 11, 2024</div>
+                    </div>
+                    <p class="review-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sed sollicitudin, est vitae posuere elementum, mi neque
+                      fermentum massa, sed condimentum neque ipsum vel felis.
+                    </p>
+                    <div
+                      style="display: flex; gap: 0.5rem; align-items: center"
+                    >
+                      399 likes
+                      <i style="font-size: 0.3rem" class="ri-circle-fill"></i>
+                      133 comments
+                    </div>
+                    <div class="rating-reviews-bottom">
+                      <div>
+                        <i class="ri-thumb-up-line"></i>
+                        Like
+                      </div>
+                      <div>
+                        <i class="ri-chat-1-line"></i>
+                        Comment
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rating-reviews-card">
+                  <div class="rating-reviews-card-left">
+                    <img
+                      src="./assets/bookDetailsPage/author.jpg"
+                      alt="rating-image"
+                    />
+                    <h4 class="rating-reviews-card-title">Larissa Cambusano</h4>
+                  </div>
+                  <div class="rating-reviews-card-right">
+                    <div style="display: flex; justify-content: space-between">
+                      <div class="user-rating">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                      </div>
+                      <div style="font-size: 0.9rem">October 11, 2024</div>
+                    </div>
+                    <p class="review-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sed sollicitudin, est vitae posuere elementum, mi neque
+                      fermentum massa, sed condimentum neque ipsum vel felis.
+                    </p>
+                    <div
+                      style="display: flex; gap: 0.5rem; align-items: center"
+                    >
+                      399 likes
+                      <i style="font-size: 0.3rem" class="ri-circle-fill"></i>
+                      133 comments
+                    </div>
+                    <div class="rating-reviews-bottom">
+                      <div>
+                        <i class="ri-thumb-up-line"></i>
+                        Like
+                      </div>
+                      <div>
+                        <i class="ri-chat-1-line"></i>
+                        Comment
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                style="
+                  color: #2e867d;
+                  font-size: 1rem;
+                  position: absolute;
+                  right: 0;
+                  bottom: 2rem;
+                "
+                href="#"
+                class="top-rating-button"
+                >View More</a
+              >
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- User Reviews Section -->
-      <section class="reviews">
-        <h3>User Reviews</h3>
-        <div class="reviews-container">
-          <div class="review-card">
-            <div class="review-avatar">
-              <img src="pics/avatar.png" alt="User  Avatar" />
-            </div>
-            <div class="review-content">
-              <p class="review-text">"يوصى به جدا الكتاب مميز"</p>
-              <p class="review-author">– سعيد حمد</p>
-            </div>
-          </div>
-          <div class="review-card">
-            <div class="review-avatar">
-              <img src="pics/avatar.png" alt="User  Avatar" />
-            </div>
-            <div class="review-content">
-              <p class="review-text">"أحببت الرواية جدا"</p>
-              <p class="review-author">– سالي أحمد</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
-
-    <footer class="footer child4 text-center py-3">
+    <!---------------------- End Of Main ----------------------->
+    <!-- <footer class="footer child4 text-center py-3">
       <div class="container1">
-        <!-- Social Media Icons -->
-        <!-- <div class="social-icons mb-3">
-            <a href="https://facebook.com/OfficialAgathaChristie" target="_blank" class="icon">
-                <i class="fab fa-facebook fa-2x"></i>
-            </a>
-            <a href="https://twitter.com/agathachristie" target="_blank" class="icon">
-                <i class="fab fa-twitter fa-2x"></i>
-            </a>
-            <a href="https://instagram.com/agathachristieofficial" target="_blank" class="icon">
-                <i class="fab fa-instagram fa-2x"></i>
-            </a>
-        </div> -->
-
-        <!-- Short Quote -->
         <p class="quote">
           "Celebrating Agatha Christie's legacy in mystery and detective
           literature."
         </p>
 
-        <!-- Copyright -->
         <p class="copyright">
           © 2024 Agatha Christie Ltd. All rights reserved.
         </p>
       </div>
-    </footer>
-
+    </footer> -->
+    <!---------------------- SWIPER JS -------------------->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!---------------------- JS Files --------------------->
     <script src="./js/bookDetails.js"></script>
   </body>
 </html>
