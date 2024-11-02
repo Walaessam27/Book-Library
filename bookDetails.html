@@ -34,9 +34,7 @@
               <a href="#" class="nav-link"> Genres </a>
             </li>
             <li class="nav-item">
-              <a href="library.html" class="nav-link">
-                Discover <span style="font-size: 18px">&#11206;</span></a
-              >
+              <a href="library.html" class="nav-link"> Discover </a>
               <ul class="discover-dropdown">
                 <div class="discover-dropdown-links">
                   <li><a href="#">Genres</a></li>
@@ -87,9 +85,7 @@
               <a href="#" class="nav-link"> Genres </a>
             </li> -->
           <li class="nav-item">
-            <a href="library.html" class="nav-link">
-              Discover <span style="font-size: 18px">&#11206;</span></a
-            >
+            <a href="library.html" class="nav-link"> Discover </a>
             <!-- <ul class="discover-dropdown">
                 <div class="discover-dropdown-links">
                   <li><a href="#">Genres</a></li>
@@ -155,9 +151,9 @@
     <!---------------------- End Of Header ---------------------->
     <!---------------------- Start Of Main ---------------------->
     <main>
-      <div class="book-details">
+      <div class="book-details" id="bookDetails">
         <div class="book-details-container container">
-          <div class="fixed-section">
+          <div class="fixed-section" id="fix">
             <div class="book-cover">
               <img
                 src="./assets/homePage/newsSection/book4.jpg"
@@ -528,7 +524,7 @@
                   font-size: 1rem;
                   position: absolute;
                   right: 0;
-                  bottom: 2rem;
+                  bottom: 1rem;
                 "
                 href="#"
                 class="top-rating-button"
@@ -538,20 +534,230 @@
           </div>
         </div>
       </div>
+      <section class="lists-articles-section">
+        <div class="lists-articles-section-container container">
+          <div class="articles-swiper swiper">
+            <h2 style="font-weight: bold">
+              FableFolio articles & lists featuring this book
+            </h2>
+            <div class="swiper-wrapper">
+              <div class="swiper-wrapper-slide swiper-slide">
+                <img
+                  class="swiper-slide-image"
+                  src="./assets/bookDetailsPage/listsSection/article1.png"
+                />
+                <div class="swiper-slide-content">
+                  <div>
+                    68 New Books to Read for Native American Heritage Month
+                  </div>
+                  <div class="slide-content-botton">
+                    Fiction
+                    <i style="font-size: 0.3rem" class="ri-circle-fill"></i>Non-
+                    fiction
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-wrapper-slide swiper-slide">
+                <img
+                  class="swiper-slide-image"
+                  src="./assets/bookDetailsPage/listsSection/article2.png"
+                />
+                <div class="swiper-slide-content">
+                  <div>
+                    96 Nonfiction Books to Read this Women's History Month
+                  </div>
+                  <div class="slide-content-botton">
+                    Non-fiction
+                    <i style="font-size: 0.3rem" class="ri-circle-fill"></i
+                    >History
+                    <i style="font-size: 0.3rem" class="ri-circle-fill"></i>
+                    Memoir
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-wrapper-slide swiper-slide">
+                <img
+                  class="swiper-slide-image"
+                  src="./assets/bookDetailsPage/listsSection/article3.png"
+                />
+                <div class="swiper-slide-content">
+                  <div>
+                    The 60 Most Reviewed New Books of the Past Five Years
+                  </div>
+                  <div class="slide-content-botton">Fiction</div>
+                </div>
+              </div>
+              <div class="swiper-wrapper-slide swiper-slide">
+                <img
+                  class="swiper-slide-image"
+                  src="./assets/bookDetailsPage/listsSection/article4.png"
+                />
+                <div class="swiper-slide-content">
+                  <div>
+                    Readers' Top 32 New Nonfiction (Plus What's Coming Next)
+                  </div>
+                  <div class="slide-content-botton">Non-fiction</div>
+                </div>
+              </div>
+              <div class="swiper-wrapper-slide swiper-slide">
+                <img
+                  class="swiper-slide-image"
+                  src="./assets/bookDetailsPage/listsSection/article5.png"
+                />
+                <div class="swiper-slide-content">
+                  <div>
+                    42 Charming, Heart-Warming, and Quirky Books
+                    <br />
+                  </div>
+                  <div class="slide-content-botton">
+                    Fiction
+                    <i style="font-size: 0.3rem" class="ri-circle-fill"></i
+                    >Historical fiction
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="articles-swiper swiper">
+            <h2>Lists with this book, from our members</h2>
+            <div class="swiper-wrapper">
+              <div
+                style="box-shadow: none; background-color: transparent"
+                class="swiper-wrapper-slide swiper-slide"
+              >
+                <div style="background-color: #ebe2d7" class="swiper-slide-box">
+                  <img src="./assets/homePage/topRatingSection/book1.webp" />
+                  <img src="./assets/homePage/offersSection/book2.webp" />
+                  <img src="./assets/homePage/offersSection/book1.webp" />
+                </div>
+                <div
+                  style="padding: 0; padding-top: 1rem"
+                  class="swiper-slide-content"
+                >
+                  <h3>Best Books 2019</h3>
+                  <div class="slide-content-botton">
+                    1,110 books
+                    <i style="font-size: 0.3rem" class="ri-circle-fill"></i>Non
+                    1,384 voters
+                  </div>
+                </div>
+              </div>
+              <div
+                style="box-shadow: none; background-color: transparent"
+                class="swiper-wrapper-slide swiper-slide"
+              >
+                <div style="background-color: #dee0ed" class="swiper-slide-box">
+                  <img src="./assets/homePage/homeSection/book3.webp" />
+                  <img src="./assets/homePage/offersSection/book4.webp" />
+                  <img src="./assets/homePage/offersSection/book3.webp" />
+                </div>
+                <div
+                  style="padding: 0; padding-top: 1rem"
+                  class="swiper-slide-content"
+                >
+                  <h3>Memoir Published in Year: 2019</h3>
+                  <div class="slide-content-botton">
+                    108 books
+                    <i style="font-size: 0.3rem" class="ri-circle-fill"></i>Non
+                    90 voters
+                  </div>
+                </div>
+              </div>
+              <div
+                style="box-shadow: none; background-color: transparent"
+                class="swiper-wrapper-slide swiper-slide"
+              >
+                <div style="background-color: #dce8d1" class="swiper-slide-box">
+                  <img src="./assets/homePage/homeSection/book4.webp" />
+                  <img src="./assets/homePage/offersSection/book5.webp" />
+                  <img src="./assets/homePage/offersSection/book6.webp" />
+                </div>
+                <div
+                  style="padding: 0; padding-top: 1rem"
+                  class="swiper-slide-content"
+                >
+                  <h3>Recommended by Reading Challengers</h3>
+                  <div class="slide-content-botton">
+                    5144 books
+                    <i style="font-size: 0.3rem" class="ri-circle-fill"></i>Non
+                    3729 voters
+                  </div>
+                </div>
+              </div>
+              <div
+                style="box-shadow: none; background-color: transparent"
+                class="swiper-wrapper-slide swiper-slide"
+              >
+                <div style="background-color: #ebe2d7" class="swiper-slide-box">
+                  <img src="./assets/bookDetailsPage/listsSection/book1.jpg" />
+                  <img src="./assets/bookDetailsPage/listsSection/book2.jpg" />
+                  <img src="./assets/bookDetailsPage/listsSection/book3.jpg" />
+                </div>
+                <div
+                  style="padding: 0; padding-top: 1rem"
+                  class="swiper-slide-content"
+                >
+                  <h3>Books That Everyone Should Read At Least Once</h3>
+                  <div class="slide-content-botton">
+                    32.9k books
+                    <i style="font-size: 0.3rem" class="ri-circle-fill"></i>Non
+                    113k voters
+                  </div>
+                </div>
+              </div>
+              <div
+                style="box-shadow: none; background-color: transparent"
+                class="swiper-wrapper-slide swiper-slide"
+              >
+                <div style="background-color: #dee0ed" class="swiper-slide-box">
+                  <img src="./assets/bookDetailsPage/listsSection/book4.jpg" />
+                  <img src="./assets/bookDetailsPage/listsSection/book5.jpg" />
+                  <img src="./assets/bookDetailsPage/listsSection/book6.jpg" />
+                </div>
+                <div
+                  style="padding: 0; padding-top: 1rem"
+                  class="swiper-slide-content"
+                >
+                  <h3>Best Books Ever</h3>
+                  <div class="slide-content-botton">
+                    124k books
+                    <i style="font-size: 0.3rem" class="ri-circle-fill"></i>Non
+                    265k voters
+                  </div>
+                </div>
+              </div>
+              <div
+                style="box-shadow: none; background-color: transparent"
+                class="swiper-wrapper-slide swiper-slide"
+              >
+                <div style="background-color: #dce8d1" class="swiper-slide-box">
+                  <img src="./assets/bookDetailsPage/listsSection/book7.jpg" />
+                  <img src="./assets/bookDetailsPage/listsSection/book8.jpg" />
+                  <img src="./assets/bookDetailsPage/listsSection/book9.jpg" />
+                </div>
+                <div
+                  style="padding: 0; padding-top: 1rem"
+                  class="swiper-slide-content"
+                >
+                  <h3>One Million Ratings!</h3>
+                  <div class="slide-content-botton">
+                    179 books
+                    <i style="font-size: 0.3rem" class="ri-circle-fill"></i>Non
+                    1021 voters
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
     </main>
     <!---------------------- End Of Main ----------------------->
-    <!-- <footer class="footer child4 text-center py-3">
-      <div class="container1">
-        <p class="quote">
-          "Celebrating Agatha Christie's legacy in mystery and detective
-          literature."
-        </p>
 
-        <p class="copyright">
-          © 2024 Agatha Christie Ltd. All rights reserved.
-        </p>
-      </div>
-    </footer> -->
     <!---------------------- SWIPER JS -------------------->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!---------------------- JS Files --------------------->

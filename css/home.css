@@ -399,6 +399,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  position: relative;
+  height: 110px;
 }
 
 .news-books-book-card .card-content .card-content-data .book-title {
@@ -415,6 +417,8 @@
   font-size: 20px;
   display: flex;
   gap: 10px;
+  position: absolute;
+  bottom: 0;
 }
 
 .news-container .swiper-button-next,

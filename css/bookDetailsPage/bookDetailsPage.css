@@ -2,11 +2,13 @@
 @import "../header.css";
 @import "./fixedSection.css";
 @import "./scrollSection.css";
+@import "./listsSection.css";
 
 .book-details {
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
+  padding-bottom: 0;
   align-items: center;
 }
 
@@ -50,6 +52,11 @@
 .book-details .book-author,
 .book-details .rating {
   display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #2e867d;
 }
 
 @media (max-width: 430px) {
