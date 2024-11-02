@@ -109,9 +109,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const minWidth = window.matchMedia("(min-width: 1024px)");
 
   const handleScroll = () => {
-    if (window.scrollY >= (bookDetailsHeight * 3) / 5) {
+    if (window.scrollY >= (bookDetailsHeight * 2) / 3) {
       console.log(
-        "Book Details Height 3/5 reached: " +
+        "Book Details Height 2/3 reached: " +
           window.scrollY +
           ", " +
           (bookDetailsHeight * 3) / 5
@@ -121,19 +121,96 @@ document.addEventListener("DOMContentLoaded", () => {
       fixedSection.style.position = "fixed";
     }
   };
-
-  // Check if min-width condition is met and add/remove scroll event accordingly
   const handleResize = () => {
     if (minWidth.matches) {
       document.addEventListener("scroll", handleScroll);
     } else {
       document.removeEventListener("scroll", handleScroll);
-      // Reset position style when width is below 1024px
       fixedSection.style.position = "";
     }
   };
-
-  // Initial check and setup for resize event
   handleResize();
   minWidth.addEventListener("change", handleResize);
+});
+
+function displayStars(rating) {
+  const starContainer = document.getElementById("starRating");
+  const starContainerSmall = document.getElementById("starRatingSmall");
+  starContainer.innerHTML = "";
+  starContainerSmall.innerHTML = "";
+
+  for (let i = 1; i <= 5; i++) {
+    const star = document.createElement("i");
+    star.className = "ri-star-fill";
+    star.style.color = i <= rating ? "#e47b01" : "#c2c7cc";
+    starContainer.appendChild(star);
+
+    const starSmall = document.createElement("i");
+    starSmall.className = "ri-star-fill";
+    starSmall.style.color = i <= rating ? "#e47b01" : "#c2c7cc";
+    starContainerSmall.appendChild(starSmall);
+  }
+}
+
+function displayGenres(genresArray) {
+  const genres = document.getElementById("genres");
+  genres.innerHTML = "";
+
+  genresArray.forEach((genre) => {
+    const genreElement = document.createElement("p");
+    genreElement.textContent = genre;
+    genres.appendChild(genreElement);
+  });
+}
+
+function toggleSavedStatus(saved) {
+  const savedStatus = document.getElementById("wantToReadBtn");
+  if (saved) {
+    savedStatus.style.backgroundColor = "#dce8d1";
+    savedStatus.style.border = "#2e867d solid 2px";
+    savedStatus.style.color = "#2e867d";
+  } else {
+    savedStatus.style.backgroundColor = "#2e867d";
+    savedStatus.style.border = "transparent";
+    savedStatus.style.color = "white";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const bookId = parseInt(params.get("bookId"), 10);
+  const books = JSON.parse(localStorage.getItem("books")) || [];
+  const book = books.find((b) => b.id === bookId);
+  console.log("Book ID: " + bookId);
+  if (!book) {
+    console.log("Book not found with ID: " + bookId);
+    return;
+  }
+  console.log(book.title);
+
+  document.getElementById("bookTitle").textContent = book.title;
+  document.getElementById("bookTitleSmall").textContent = book.title;
+  document.getElementById("bookAuthor").textContent = book.author;
+  document.getElementById("bookAuthorSmall").textContent = book.author;
+  document.getElementById("authorSectionName").textContent = book.author;
+  document.getElementById("bookPages").textContent = book.pages;
+  document.getElementById("bookDescription").textContent = book.description;
+  document.getElementById("bookCover").src = book.coverImage;
+  document.getElementById("bookRatingNumber").textContent = `${book.rating}.3`;
+  displayStars(book.rating);
+  displayGenres(book.genres);
+  toggleSavedStatus(book.saved);
+
+  document
+    .getElementById("wantToReadBtn")
+    .addEventListener("click", function () {
+      book.saved = !book.saved;
+      toggleSavedStatus(book.saved);
+      localStorage.setItem("books", JSON.stringify(books));
+      console.log("Book saved status updated: " + book.saved);
+      book.saved
+        ? showToast("Shelved as want to read")
+        : showToast("Removed book from shelves");
+      toggleSavedStatus(book.saved);
+    });
 });

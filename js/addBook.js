@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const reader = new FileReader();
 
       reader.onload = function (e) {
-        const coverImageBase64 = e.target.result; // Get base64 string
+        const coverImageBase64 = e.target.result;
         const existingBooks = JSON.parse(localStorage.getItem("books")) || [];
 
         const book = {
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
           rating,
           description,
           genres,
-          coverImage: coverImageBase64, // Save base64 image string
+          coverImage: coverImageBase64,
           saved: false,
           read: false,
         };
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
       };
 
       if (coverImageFile) {
-        reader.readAsDataURL(coverImageFile); // Convert image to base64 and save
+        reader.readAsDataURL(coverImageFile);
       } else {
         showToast("Please upload a book cover image.");
       }

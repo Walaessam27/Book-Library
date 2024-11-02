@@ -158,36 +158,37 @@
               <img
                 src="./assets/homePage/newsSection/book4.jpg"
                 alt="Book Cover"
+                id="bookCover"
               />
             </div>
             <div class="medium-small-screen">
-              <h1 class="book-title">The Berry Pickers</h1>
-              <h2 class="book-author">Amanda Peters</h2>
-              <div class="rating">
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-              </div>
+              <h1 class="book-title" id="bookTitleSmall">The Berry Pickers</h1>
+              <h2 class="book-author" id="bookAuthorSmall">Amanda Peters</h2>
+              <div class="rating" id="starRatingSmall"></div>
             </div>
             <div class="add-to-list">
-              <button>Want to read</button>
+              <button id="wantToReadBtn">Want to read</button>
             </div>
           </div>
           <div class="scroll-section">
             <div class="book-info">
-              <h1 class="book-title">The Berry Pickers</h1>
-              <h2 class="book-author">Amanda Peters</h2>
+              <h1 class="book-title" id="bookTitle">The Berry Pickers</h1>
+              <h2 class="book-author" id="bookAuthor">Amanda Peters</h2>
               <div class="rating">
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i style="color: #c2c7cc" class="ri-star-fill"></i>
-                <i style="color: #c2c7cc" class="ri-star-fill"></i>
-                <span style="margin-left: 1rem; color: black">3.3</span>
+                <div id="starRating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <span
+                  style="margin-left: 0.5rem; color: black"
+                  id="bookRatingNumber"
+                  >3.3</span
+                >
               </div>
-              <div class="book-description">
+              <div class="book-description" id="bookDescription">
                 A four-year-old Mi’kmaq girl goes missing from the blueberry
                 fields of Maine, sparking a tragic mystery that haunts the
                 survivors, unravels a community, and remains unsolved for nearly
@@ -212,14 +213,14 @@
               </div>
               <div class="genres-container">
                 <h3>Genres</h3>
-                <div class="genres">
+                <div class="genres" id="genres">
                   <p>Mystery</p>
                   <p>Crime</p>
                   <p>Fiction</p>
                 </div>
               </div>
               <div class="pages">
-                <p>307 pages, Hardcover</p>
+                <p><span id="bookPages">307</span> pages, Hardcover</p>
                 <p>First published April 4, 2023</p>
               </div>
             </div>
@@ -232,7 +233,7 @@
                     alt="Author Avatar"
                   />
                   <div>
-                    <h3>Amanda Peters</h3>
+                    <h3 id="authorSectionName">Amanda Peters</h3>
                     <p>2 books1,245 followers</p>
                   </div>
                 </div>
@@ -757,10 +758,11 @@
       </section>
     </main>
     <!---------------------- End Of Main ----------------------->
-
+    <div id="toast-container"></div>
     <!---------------------- SWIPER JS -------------------->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!---------------------- JS Files --------------------->
     <script src="./js/bookDetails.js"></script>
+    <script src="./js/toast.js"></script>
   </body>
 </html>

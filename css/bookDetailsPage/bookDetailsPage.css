@@ -44,13 +44,25 @@
   display: flex;
   gap: 10px;
   color: #e47b01;
-  display: flex;
   align-items: center;
 }
 
-.book-details .book-title,
-.book-details .book-author,
-.book-details .rating {
+.book-details .scroll-section .book-title,
+.book-details .scroll-section .book-author {
+  display: none;
+}
+
+.book-details .scroll-section .book-info .rating {
+  display: none;
+}
+
+#starRating {
+  display: flex;
+  gap: 0.4rem;
+}
+
+#bookRatingNumber,
+#starRating {
   display: none;
 }
 
@@ -90,16 +102,23 @@
   .book-details-container {
     flex-direction: row;
   }
-  .medium-small-screen {
+  .medium-small-screen,
+  #starRatingSmall {
     display: none;
   }
   .book-details .book-title {
     font-size: 2rem;
     font-weight: bold;
   }
-  .book-details .book-title,
-  .book-details .book-author,
-  .book-details .rating {
+  .book-details .scroll-section .book-title,
+  .book-details .scroll-section .book-author {
     display: block;
+  }
+  .book-details .scroll-section .book-info .rating {
+    display: flex;
+  }
+  #bookRatingNumber,
+  #starRating {
+    display: flex;
   }
 }
