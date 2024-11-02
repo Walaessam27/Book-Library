@@ -1,0 +1,205 @@
+/*------------------------------------ GOOGLE FONTS ------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Kalam:wght@300;400;700&family=Lilita+One&family=Roboto:ital,wght@1,100&display=swap");
+/*------------------------------------ SUB CSS FOLDERS  --------------------------------*/
+@import "../css/header.css";
+@import "../css/toast.css";
+
+/*------------------------------------ VARIABLES ---------------------------------------*/
+:root {
+  /*------ COLORS -------*/
+  --color-primary: #655c87;
+  --color-secondary: #b197fc;
+  /* --color-bg: #beb6bd; #f9f7f4;*/
+  --color-bg: #f9f7f4;
+  --color-purple: #b0a2af;
+  /*#e5ca20*/
+  --color-yellow: #f8eda1ce;
+  --color-pink: #c77a71;
+  --color-green: #7f8c2c;
+  --color-orange: #de6c28;
+  --color-black: #000000;
+  --color-gray: #736d6a;
+  --color-blue: #e8f4f0;
+  /*#f3ede1;*/
+  --color-body: #f9f7f4;
+  --color-subHeading: #a39cb0;
+  --color-p: #161514b9;
+  --color-main: #7e676e;
+  /*------ FONT SIZE -------*/
+  --font-family-main: "Montserrat", sans-serif;
+  --font-family-secondary: "Montagu Slab", serif;
+  --font: "Times New Roman", serif;
+  --bigest-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  /*------ FONT WEIGHT -------*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /*------ Z INDEX -------*/
+  --z-tootip: 10;
+  --z-fixed: 100;
+}
+
+/*------------------------------------ GLOBAL STYLES ------------------------------------*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+button {
+  font-family: var(--font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--color-body);
+  color: #000000;
+  text-shadow: 0.7px 0.7px 0.7px #2c242344;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font);
+  font-weight: var(--font-medium);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*------------------------------------------- Scrollbar -------------------------------------------*/
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e5cb2059;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e5ca20;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e5ca20;
+}
+
+/*------------------------------------ REUSABLE CLASSE ---------------------------------------*/
+
+.container {
+  --max-width: 1220px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 10rem;
+}
+
+.section {
+  padding-block: 2rem 0rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  font-family: var(--font);
+  margin-bottom: 2rem;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.button {
+  display: inline-block;
+  background-color: #6fcde6;
+  color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  font-weight: var(--font-semi-bold);
+  font-size: var(--normal-font-size);
+  transition: box-shadow 0.4s;
+}
+
+.button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/*------------------------------------ RESPONSIVE ---------------------------------------*/
+@media (max-width: 320px) {
+  .container {
+    margin-inline: 1rem;
+  }
+  .section {
+    padding-block: 5rem 0rem;
+  }
+}
+
+@media (min-width: 320px) {
+  .section {
+    padding-block: 5rem 0rem;
+  }
+}
+
+@media (min-width: 450px) {
+  .section {
+    padding-block: 5rem 0rem;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 1023px) {
+  .section {
+    padding-block: 5rem 0rem;
+  }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 1150px) {
+  .section {
+    padding-block: 7rem 2rem;
+  }
+}
+
+@media (min-width: 1220px) {
+  .container {
+    margin-inline: auto;
+  }
+}
