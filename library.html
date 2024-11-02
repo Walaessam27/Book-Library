@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FableFolio</title>
+    <!---------------------- ICONS ------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.css"
+    />
+    <!---------------------- TOSTIFY CSS ------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <!---------------------- SWIPER CSS -------------------->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <!---------------------- CSS FOLDER -------------------->
+    <link rel="stylesheet" href="./css/library.css" />
+  </head>
+  <body>
+    <!---------------------- Start Of Header -------------------->
+    <header class="header" id="header">
+      <!-------------------- LARGE SCREEN NAVBAR ---------------->
+      <nav class="nav-large-screen nav-container">
+        <!---------- LOGO ---------->
+        <a href="#" class="nav-logo">FableFolio</a>
+        <!---------- MENU ---------->
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a href="myBooks.html" class="nav-link">My Books </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Genres </a>
+            </li>
+            <li class="nav-item">
+              <a href="library.html" class="nav-link"> Discover </a>
+              <ul class="discover-dropdown">
+                <div class="discover-dropdown-links">
+                  <li><a href="#">Genres</a></li>
+                  <li><a href="#">New Releases</a></li>
+                  <li><a href="#">Lists</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">News & Interviews</a></li>
+                </div>
+                <div class="discover-dropdown-favoriteGenres">
+                  <h4>Favorite Genres</h4>
+                  <li><a href="#">Fantasy</a></li>
+                  <li><a href="#">Fiction</a></li>
+                  <li><a href="#">Psychology</a></li>
+                  <li><a href="#">Self Help</a></li>
+                  <li><a href="#">All Genres</a></li>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Blog </a>
+            </li>
+          </ul>
+        </div>
+        <!------- RIGHT SIDE ------->
+        <div class="nav-right">
+          <!-- <a href="#" class="nav-link">
+              <i class="ri-user-line"></i>
+              <span>Login</span>
+            </a>
+            <div class="nav-divider"></div> -->
+          <a href="profile.html" class="profile-pic">
+            <img src="./assets/profilePic.png" alt="profile-pic" />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-------------------- MEDIUM SCREEN NAVBAR ----------------->
+    <div class="nav-medium-screen">
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="myBooks.html" class="nav-link">My Books </a>
+          </li>
+          <!-- <li class="nav-item">
+              <a href="#" class="nav-link"> Genres </a>
+            </li> -->
+          <li class="nav-item">
+            <a href="library.html" class="nav-link"> Discover</a>
+            <!-- <ul class="discover-dropdown">
+                <div class="discover-dropdown-links">
+                  <li><a href="#">Genres</a></li>
+                  <li><a href="#">New Releases</a></li>
+                  <li><a href="#">Lists</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">News & Interviews</a></li>
+                </div>
+                <div class="discover-dropdown-favoriteGenres">
+                  <h4>Favorite Genres</h4>
+                  <li><a href="#">Fantasy</a></li>
+                  <li><a href="#">Fiction</a></li>
+                  <li><a href="#">Psychology</a></li>
+                  <li><a href="#">Cookbooks</a></li>
+                  <li><a href="#">Self Help</a></li>
+                  <li><a href="#">All Genres</a></li>
+                </div>
+              </ul> -->
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Blog </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-------------------- SMALL SCREEN NAVBAR ------------------>
+    <div class="nav-small-screen">
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="ri-home-3-line"></i>
+              <!-- <span>Home</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="myBooks.html" class="nav-link">
+              <i class="ri-bookmark-2-line"></i>
+              <!-- <span>My Books</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="library.html" class="nav-link">
+              <i class="ri-compass-line"></i>
+              <!-- <span>Discover</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="library.html" class="nav-link">
+              <i class="ri-search-line"></i>
+              <!-- <span>Search</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="ri-menu-line"></i>
+              <!-- <span>More</span> -->
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!---------------------- End Of Header ---------------------->
+    <main class="main">
+      <section class="library" id="library">
+        <div class="library-container container">
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 2rem;
+            "
+          >
+            <h1 class="library-title">Read anywhere. Anytime.</h1>
+            <p class="library-description">
+              Welcome to FableFolio, where you can discover and read books from
+              all over the world. Our library has an extensive collection of
+              books, from classic novels to contemporary bestsellers.
+            </p>
+            <div class="search-bar" id="search-bar">
+              <input type="text" placeholder="Search books" />
+              <button class="search-bar-button" type="submit">
+                <i class="ri-search-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---------------------- Start Of Library Section --------->
+      <section class="library-books" id="library-books">
+        <div class="library-books-container container">
+          <div class="library-books-list"></div>
+        </div>
+      </section>
+      <!-------------------- End Of Library Section -------------->
+      <!-------------------- Start Of Books Recommended Section -->
+      <section class="news" id="news">
+        <div style="margin-top: 0" class="news-container container">
+          <div class="news-books swiper">
+            <h1 style="margin-bottom: 2rem; font-size: 30px">
+              Books Recommended For You
+            </h1>
+            <div class="swiper-wrapper">
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book1.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Phantasma</h1>
+                    <h2 class="book-author">Kaylie Smith</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.14</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book2.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">The Pumpkin Spice Café</h1>
+                    <h2 class="book-author">Laurie Gilmore</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>3.4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book3.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Don't Let the Forest In</h1>
+                    <h2 class="book-author">C.G. Drews</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.33</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book4.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">The Berry Pickers</h1>
+                    <h2 class="book-author">Amanda Peters</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.05</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book5.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Enchantra</h1>
+                    <h2 class="book-author">Kaylie Smith</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.56</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book6.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">We Used to Live Here</h1>
+                    <h2 class="book-author">Marcus Kliewer</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>3.77</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book7.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Society of Lies</h1>
+                    <h2 class="book-author">Lauren Ling Brown</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>3.58</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book8.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Lights Out</h1>
+                    <h2 class="book-author">Navessa Allen</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.28</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book9.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Anathema</h1>
+                    <h2 class="book-author">Keri Lake</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.14</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book10.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">The Housemaid</h1>
+                    <h2 class="book-author">Freida McFadden</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.32</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <!-------------------- End Of Books Recommended Section ---->
+    </main>
+    <div id="toast-container"></div>
+    <!---------------------- SWIPER JS -------------------->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!---------------------- JS Files --------------------->
+    <script src="./js/home.js"></script>
+    <script src="./js/library.js"></script>
+    <script src="./js/toast.js"></script>
+  </body>
+</html>

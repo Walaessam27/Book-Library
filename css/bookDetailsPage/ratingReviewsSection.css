@@ -1,0 +1,88 @@
+.rating-reviews-sec {
+  width: 90%;
+  padding: 1rem 0;
+  --padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  --border-bottom: solid 0.1px #2e867d50;
+  position: relative;
+}
+
+.rating-reviews-sec .rating-reviews-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+  margin-bottom: 3rem;
+}
+
+.rating-reviews-sec .rating-reviews-cards .rating-reviews-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-reviews-sec
+  .rating-reviews-cards
+  .rating-reviews-card
+  .rating-reviews-card-left {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.rating-reviews-sec
+  .rating-reviews-cards
+  .rating-reviews-card
+  .rating-reviews-card-left
+  img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.rating-reviews-card-right {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: solid 0.1px #2e867d50;
+  padding: 1rem 0;
+}
+
+.rating-reviews-card-right .user-rating {
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+  color: #e47b01;
+  display: flex;
+  align-items: center;
+}
+
+.review-text {
+  width: 100%;
+}
+
+.rating-reviews-card-right .rating-reviews-bottom {
+  display: flex;
+  gap: 1rem;
+  color: #777;
+  font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .rating-reviews-sec .rating-reviews-cards .rating-reviews-card {
+    flex-direction: row;
+  }
+  .rating-reviews-card-right {
+    width: 80%;
+  }
+  .review-text {
+    width: 75%;
+  }
+}
