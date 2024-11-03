@@ -9,15 +9,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.css"
     />
-    <!---------------------- TOSTIFY CSS ------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Merriweather:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <!---------------------- SWIPER CSS -------------------->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <!---------------------- CSS FOLDER -------------------->
-    <link rel="stylesheet" href="./css/library.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
   </head>
   <body>
     <!---------------------- Start Of Header -------------------->
@@ -154,7 +161,205 @@
       </div>
     </div>
     <!---------------------- End Of Header ---------------------->
-    <main class="main">
+    <div class="container">
+      <header class="child1">
+        <h1>Agatha Christie</h1>
+        <img
+          src="images/download.jpeg"
+          alt="Agatha Christie"
+          class="img-fluid rounded-circle"
+          style="width: 150px; height: 150px"
+        />
+        <p class="about">
+          Agatha Christie, often called the "Queen of Mystery," is one of the
+          best-selling authors of all time. Her mystery novels, particularly
+          those featuring Hercule Poirot and Miss Marple, are celebrated
+          worldwide.
+        </p>
+        <p class="Nation">Nationality: British</p>
+        <p class="date">Date of Birth: September 15, 1890</p>
+      </header>
+
+      <main class="child2">
+        <h2 class="workAuthor">Author's works</h2>
+        <div
+          id="booksCarousel"
+          class="carousel slide carousel-fade"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/book4.jpg"
+                      class="card-img-top"
+                      alt="Book 1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Murder on the Orient Express</h5>
+                      <p class="card-text">
+                        A famous mystery novel featuring Hercule Poirot.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/book2.jpg"
+                      class="card-img-top"
+                      alt="Book 2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">And Then There Were None</h5>
+                      <p class="card-text">
+                        Ten strangers are invited to an island, but they're
+                        being killed off one by one.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/book3.jpg"
+                      class="card-img-top"
+                      alt="Book 3"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">The Murder of Roger Ackroyd</h5>
+                      <p class="card-text">
+                        A classic detective story with a shocking twist.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/book4.jpg"
+                      class="card-img-top"
+                      alt="Book 4"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Death on the Nile</h5>
+                      <p class="card-text">
+                        A murder mystery set on a luxury cruise in Egypt.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/book5.jpg"
+                      class="card-img-top"
+                      alt="Book 5"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">The ABC Murders</h5>
+                      <p class="card-text">
+                        A serial killer is on the loose, and Hercule Poirot must
+                        stop him.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/book2.jpg"
+                      class="card-img-top"
+                      alt="Book 5"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">The ABC Murders</h5>
+                      <p class="card-text">
+                        A serial killer is on the loose, and Hercule Poirot must
+                        stop him.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#booksCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#booksCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </main>
+    </div>
+    <!-- <footer class="child4">footer</footer> -->
+    <footer class="footer child4 text-center py-3">
+      <div class="container1">
+        <!-- Social Media Icons -->
+        <div class="social-icons mb-3">
+          <a
+            href="https://facebook.com/OfficialAgathaChristie"
+            target="_blank"
+            class="icon"
+          >
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a
+            href="https://twitter.com/agathachristie"
+            target="_blank"
+            class="icon"
+          >
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a
+            href="https://instagram.com/agathachristieofficial"
+            target="_blank"
+            class="icon"
+          >
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </div>
+
+        <!-- Short Quote -->
+        <p class="quote">
+          "Celebrating Agatha Christie's legacy in mystery and detective
+          literature."
+        </p>
+
+        <!-- Copyright -->
+        <p class="copyright">
+          © 2024 Agatha Christie Ltd. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- <main class="main">
       <section class="library" id="library">
         <div class="library-container container">
           <h1 class="library-title">Read anywhere. Anytime.</h1>
@@ -169,16 +374,14 @@
               <i class="ri-search-line"></i>
             </button>
           </div>
-          <!-- <div class="library-data">
-            <div class="library-container container grid"></div>
-            <div class="library-image">
-              <img src="./assets/library.jpg" alt="library" />
-            </div>
-          </div> -->
+          
         </div>
       </section>
-    </main>
-    <!---------------------- TOSTIFY JS ------------------------->
-    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+      
+    </main> -->
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
