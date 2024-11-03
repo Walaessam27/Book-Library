@@ -1,0 +1,164 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #ffff, #95d1df);
+    animation: backgroundShift 5s ease-in-out infinite alternate;
+    padding: 20px; 
+  }
+  
+  @keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  
+  .container {
+    text-align: center;
+    animation: fadeIn 1.2s ease;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  h1 {
+    color: #1d5e6c;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    font: bold;
+  }
+  
+  .welcome-text {
+    font-size: 1.1rem;
+    color: #1d5e6c;
+    margin-bottom: 20px;
+  }
+  
+  .form-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form {
+    background-color: #fff;
+    border: 2px solid #6fcde6;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .form:hover {
+    transform: translateY(-5px);
+  }
+  
+  .form h2 {
+    color: #6fcde6;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6fcde6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+  }
+  
+  .form button:hover {
+    background-color: #6fcde6;
+  }
+  
+  .feedback {
+    font-size: 0.9rem;
+    color: #6fcde6;
+    margin-top: 10px;
+  }
+  
+  .form p {
+    margin-top: 15px;
+    color: #666;
+  }
+  
+  .form p a {
+    color: #6fcde6;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .form p a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .form {
+      width: 90%; 
+      padding: 15px;
+    }
+  
+    .form h2 {
+      font-size: 1.3rem;
+    }
+  
+    .form input, .form button {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    .welcome-text {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.6rem;
+    }
+  
+    .form h2 {
+      font-size: 1.2rem;
+    }
+  
+    .form input, .form button {
+      padding: 6px;
+      font-size: 0.8rem;
+    }
+  
+    .welcome-text {
+      font-size: 0.9rem;
+    }
+  }
+  

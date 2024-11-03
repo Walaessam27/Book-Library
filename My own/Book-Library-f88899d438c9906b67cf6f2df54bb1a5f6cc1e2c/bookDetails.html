@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Details</title>
+  <link rel="stylesheet" href="css/bookDetails.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.css"
+    />
+  <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+  <!-- Header -->
+   <header class="header" id="header">
+    <nav class="nav-large-screen nav-container">
+      <a href="#" class="nav-logo">Booknest</a>
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">My Books </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Genres </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Discover <span style="font-size: 18px">&#11206;</span></a
+            >
+            <ul class="discover-dropdown">
+              <div class="discover-dropdown-links">
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">Lists</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">News & Interviews</a></li>
+              </div>
+              <div class="discover-dropdown-favoriteGenres">
+                <h4>Favorite Genres</h4>
+                <li><a href="#">Fantasy</a></li>
+                <li><a href="#">Fiction</a></li>
+                <li><a href="#">Psychology</a></li>
+                <li><a href="#">Self Help</a></li>
+                <li><a href="#">All Genres</a></li>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Blog </a>
+          </li>
+        </ul>
+      </div>
+            <div class="nav-right">
+        <a href="#" class="nav-link">
+          <i class="ri-user-line"></i>
+          <span>Login</span>
+        </a>
+        <div class="nav-divider"></div>
+        <div class="profile-pic">
+          <img src="./assets/profilePic.png" alt="profile-pic" />
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="book-details">
+      <!-- Book Cover -->
+      <div class="book-cover">
+        <img src="pics/cover1.jpg" alt="Book Cover" />
+      </div>
+      
+       <!-- Book Info -->
+       <div class="book-info">
+        <h2>Book Title</h2>
+        <p><strong>Author:</strong> نوال فريد</p>
+        <p><strong>Publication Date:</strong> 2024</p>
+        <p><strong>Genre:</strong> رواية</p>
+        <p><strong>Description:</strong> ..............................هذه الرواية من كتابة نوال فريد تتحدث عن قصة فتاة تدعى ليلى</p>
+        
+        <!-- Actions -->
+        <div class="actions">
+          <button id="wishlist-btn">Add to Wishlist <i class="ri-heart-line"></i></button>
+          <button id="read-btn">Mark as Read <i class="ri-bookmark-line"></i></button>
+        </div>
+
+        <!-- Rating System -->
+        <div class="rating-system">
+          <i class="ri-star-fill" id="star-1"></i>
+          <i class="ri-star-fill" id="star-2"></i>
+          <i class="ri-star-fill" id="star-3"></i>
+          <i class="ri-star-fill" id="star-4"></i>
+          <i class="ri-star-fill" id="star-5"></i>
+          <span id="rating-value">4.5/5</span>
+        </div>
+      </div>
+    </div>
+
+  
+    <!-- User Reviews Section -->
+<section class="reviews">
+  <h3>User Reviews</h3>
+  <div class="reviews-container">
+    <div class="review-card">
+      <div class="review-avatar">
+        <img src="pics/avatar.png" alt="User  Avatar" />
+      </div>
+      <div class="review-content">
+        <p class="review-text">"يوصى به جدا الكتاب مميز"</p>
+        <p class="review-author">– سعيد حمد</p>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-avatar">
+        <img src="pics/avatar.png" alt="User  Avatar" />
+      </div>
+      <div class="review-content">
+        <p class="review-text">"أحببت الرواية جدا"</p>
+        <p class="review-author">– سالي أحمد</p>
+      </div>
+    </div>
+  
+  </div>
+    </section>
+  </main>
+
+  <footer class="footer child4 text-center py-3">
+    <div class="container1">
+        <!-- Social Media Icons -->
+        <!-- <div class="social-icons mb-3">
+            <a href="https://facebook.com/OfficialAgathaChristie" target="_blank" class="icon">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/agathachristie" target="_blank" class="icon">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://instagram.com/agathachristieofficial" target="_blank" class="icon">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+        </div> -->
+
+        <!-- Short Quote -->
+        <p class="quote">"Celebrating Agatha Christie's legacy in mystery and detective literature."</p>
+
+        <!-- Copyright -->
+        <p class="copyright">© 2024 Agatha Christie Ltd. All rights reserved.</p>
+    </div>
+</footer>
+
+  <script src="bookDetails.js"></script>
+</body>
+</html>
+
+
+  
