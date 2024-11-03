@@ -1,0 +1,214 @@
+@import "./basic.css";
+@import "./toast.css";
+
+.my-books {
+  width: 100%;
+  margin: 1.5rem 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-books-container {
+  width: 100%;
+  margin: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.my-books-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 0.1px #fed12e62;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-books-header .my-books-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.search-bar {
+  padding: 1rem 0;
+  position: relative;
+}
+
+.search-bar input {
+  border: none;
+  height: 30px;
+  padding: 1.4rem;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  color: #fed12e;
+}
+
+.search-bar-button {
+  position: absolute;
+  color: #fed12e;
+  border: none;
+  border-radius: 50px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  right: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.my-books-list {
+  width: 100%;
+  height: 65vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0.5rem;
+}
+
+.my-books-list-card {
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+  border: none;
+  border-bottom: solid 0.1px #fed12e62;
+  border-radius: 0;
+  position: relative;
+  padding: 0;
+  box-shadow: none;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.remove-icon {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 26px;
+  color: #fed12e;
+}
+
+.my-books-list-card .card-content {
+  display: flex;
+  gap: 1rem;
+  padding-top: 2.5rem;
+}
+
+.my-books-list-card .card-content-image {
+  box-shadow: -12px 5px 20px -8px rgba(0, 0, 0, 0.253);
+  border-radius: 5px;
+  height: 140px;
+  width: 110px;
+  object-fit: fill;
+  background-color: yellow;
+}
+
+.my-books-list-card .card-content-data {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.my-books-list-card .card-content-data .book-title {
+  font-size: 1.2rem;
+  text-overflow: ellipsis;
+}
+
+.my-books-list-card .card-content-data .book-author {
+  font-size: 1rem;
+  margin-bottom: 0rem;
+  text-overflow: ellipsis;
+}
+
+.my-books-list-card .card-content-data .start-rating {
+  font-size: 18px;
+  color: #e47b01;
+  margin-bottom: 0rem;
+}
+
+.want-to-read-button {
+  width: 170px;
+  height: 40px;
+  background-color: #faf4e2;
+  border: solid 1px #fed12e;
+  font-size: 1.1rem;
+  color: #43341b;
+  border-radius: 25px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+/* .read-button {
+  background-color: #5cb85c;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+} */
+
+@media (min-width: 410px) {
+  .remove-icon {
+    top: 10px;
+  }
+}
+
+@media (min-width: 800px) {
+  .my-books-container {
+    margin: 2rem;
+    padding: 2rem;
+  }
+  .my-books-header {
+    flex-direction: row;
+  }
+  .my-books-list {
+    margin-right: 1rem;
+  }
+  .my-books-list-card {
+    height: 200px;
+    padding: 1rem;
+    margin: 0 1rem;
+  }
+  .my-books-list-card .card-content-data .book-title {
+    font-size: 1.3rem;
+  }
+
+  .my-books-list-card .card-content-data .book-author {
+    font-size: 1.2rem;
+  }
+  .remove-icon {
+    top: 20px;
+    right: 20px;
+  }
+  .my-books-list-card .card-content-data {
+    padding: 0.3rem 0;
+  }
+  .my-books-list-card .card-content-data .start-rating {
+    margin-bottom: 0.3rem;
+  }
+  .my-books-list-card .card-content {
+    padding-top: 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-books-container {
+    width: 90%;
+  }
+  .my-books-list {
+    margin-right: 2rem;
+  }
+  .my-books-list-card .card-content-image {
+    height: 150px;
+    width: 110px;
+  }
+}

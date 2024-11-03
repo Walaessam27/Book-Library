@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FableFolio</title>
+    <!---------------------- ICONS ------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.css"
+    />
+    <!---------------------- TOSTIFY CSS ------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <!---------------------- SWIPER CSS -------------------->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <!---------------------- CSS FOLDER -------------------->
+    <link rel="stylesheet" href="./css/addBook.css" />
+  </head>
+  <body>
+    <!---------------------- Start Of Header -------------------->
+    <header class="header" id="header">
+      <!-------------------- LARGE SCREEN NAVBAR ---------------->
+      <nav class="nav-large-screen nav-container">
+        <!---------- LOGO ---------->
+        <a href="#" class="nav-logo">FableFolio</a>
+        <!---------- MENU ---------->
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a href="myBooks.html" class="nav-link">My Books </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Genres </a>
+            </li>
+            <li class="nav-item">
+              <a href="library.html" class="nav-link"> Discover</a>
+              <ul class="discover-dropdown">
+                <div class="discover-dropdown-links">
+                  <li><a href="#">Genres</a></li>
+                  <li><a href="#">New Releases</a></li>
+                  <li><a href="#">Lists</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">News & Interviews</a></li>
+                </div>
+                <div class="discover-dropdown-favoriteGenres">
+                  <h4>Favorite Genres</h4>
+                  <li><a href="#">Fantasy</a></li>
+                  <li><a href="#">Fiction</a></li>
+                  <li><a href="#">Psychology</a></li>
+                  <li><a href="#">Self Help</a></li>
+                  <li><a href="#">All Genres</a></li>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Blog </a>
+            </li>
+          </ul>
+        </div>
+        <!------- RIGHT SIDE ------->
+        <div class="nav-right">
+          <!-- <a href="#" class="nav-link">
+              <i class="ri-user-line"></i>
+              <span>Login</span>
+            </a>
+            <div class="nav-divider"></div> -->
+          <a href="profile.html" class="profile-pic">
+            <img src="./assets/profilePic.png" alt="profile-pic" />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-------------------- MEDIUM SCREEN NAVBAR ----------------->
+    <div class="nav-medium-screen">
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="myBooks.html" class="nav-link">My Books </a>
+          </li>
+          <!-- <li class="nav-item">
+              <a href="#" class="nav-link"> Genres </a>
+            </li> -->
+          <li class="nav-item">
+            <a href="library.html" class="nav-link"> Discover </a>
+            <!-- <ul class="discover-dropdown">
+                <div class="discover-dropdown-links">
+                  <li><a href="#">Genres</a></li>
+                  <li><a href="#">New Releases</a></li>
+                  <li><a href="#">Lists</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">News & Interviews</a></li>
+                </div>
+                <div class="discover-dropdown-favoriteGenres">
+                  <h4>Favorite Genres</h4>
+                  <li><a href="#">Fantasy</a></li>
+                  <li><a href="#">Fiction</a></li>
+                  <li><a href="#">Psychology</a></li>
+                  <li><a href="#">Cookbooks</a></li>
+                  <li><a href="#">Self Help</a></li>
+                  <li><a href="#">All Genres</a></li>
+                </div>
+              </ul> -->
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Blog </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-------------------- SMALL SCREEN NAVBAR ------------------>
+    <div class="nav-small-screen">
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="ri-home-3-line"></i>
+              <!-- <span>Home</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="myBooks.html" class="nav-link">
+              <i class="ri-bookmark-2-line"></i>
+              <!-- <span>My Books</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="library.html" class="nav-link">
+              <i class="ri-compass-line"></i>
+              <!-- <span>Discover</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="library.html" class="nav-link">
+              <i class="ri-search-line"></i>
+              <!-- <span>Search</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="ri-menu-line"></i>
+              <!-- <span>More</span> -->
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!---------------------- End Of Header ---------------------->
+    <main>
+      <section class="add-book" id="add-book">
+        <div class="add-book-container container">
+          <div class="add-book-popup">
+            <div class="popup-close-btn"><i class="ri-close-line"></i></div>
+            <h1>Add New Book</h1>
+            <form id="add-book-form">
+              <div class="form">
+                <div class="form-left">
+                  <div class="form-row">
+                    <div class="form-element">
+                      <label for="book-title">Book Title</label>
+                      <input type="text" id="book-title" required />
+                    </div>
+                    <div class="form-element">
+                      <label for="book-author">Author Name</label>
+                      <input type="text" id="book-author" required />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-element">
+                      <label for="book-pages">Pages</label>
+                      <input type="number" id="book-pages" required />
+                    </div>
+                    <div class="form-element">
+                      <label for="book-rating">Rating</label>
+                      <input type="number" id="book-rating" required />
+                    </div>
+                  </div>
+                  <div class="form-element">
+                    <label for="description">Description:</label>
+                    <textarea
+                      id="description"
+                      name="description"
+                      rows="1"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="form-element select-container">
+                    <label for="book-genre">Genre</label>
+                    <select id="book-genre" name="book-genre" multiple required>
+                      <option value="Fiction">Fiction</option>
+                      <option value="Non-Fiction">Non-Fiction</option>
+                      <option value="Mystery">Mystery</option>
+                      <option value="Fantasy">Fantasy</option>
+                      <option value="Science-Fiction">Science Fiction</option>
+                      <option value="Biography">Biography</option>
+                      <option value="Romance">Romance</option>
+                      <option value="Philosophy">Philosophy</option>
+                      <option value="Self Help">Self Help</option>
+                      <option value="Spirituality">Spirituality</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-right">
+                  <div class="form-element">
+                    <label for="bookCover">Book Cover</label>
+                    <div class="book-cover-wrapper">
+                      <label for="bookCoverImage" class="upload-button"
+                        ><i class="ri-image-add-line"></i
+                      ></label>
+                      <input
+                        type="file"
+                        id="bookCoverImage"
+                        name="bookCoverImage"
+                        accept="image/*"
+                        required
+                        style="display: none"
+                      />
+                      <div
+                        id="bookCoverPreview"
+                        class="book-cover-preview"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-element">
+                <button type="submit" id="add-book-btn">Add Book</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="toast-container"></div>
+    <script src="./js/addBook.js"></script>
+    <script src="./js/toast.js"></script>
+  </body>
+</html>

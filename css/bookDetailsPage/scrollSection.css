@@ -1,0 +1,48 @@
+@import "./scrollSectionBookInfo.css";
+@import "./scrollSectionAboutAuthor.css";
+@import "./ratingReviewsSection.css";
+@import "../home.css";
+
+.news {
+  max-width: 310px;
+  height: auto;
+  --background-color: antiquewhite;
+}
+
+.news-container {
+  padding: 0;
+  margin: 0;
+  border-bottom: solid 0.1px #2e867d50;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #2e867d;
+}
+
+.scroll-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 414px) and (max-width: 674px) {
+  .news {
+    max-width: 350px;
+    height: auto;
+  }
+}
+
+@media (min-width: 675px) {
+  .news {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .scroll-section {
+    width: 75%;
+    position: relative;
+    left: 25%;
+  }
+}

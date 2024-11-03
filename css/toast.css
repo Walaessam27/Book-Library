@@ -1,0 +1,21 @@
+#toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.toast {
+  background-color: #f7eeac;
+  color: #000;
+  font-weight: bold;
+  padding: 15px 25px;
+  margin-bottom: 10px;
+  border-bottom: solid 0.1px #eccb0e;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.toast.hide {
+  opacity: 0;
+}

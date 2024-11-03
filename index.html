@@ -3,7 +3,738 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FableFolio</title>
+    <!---------------------- ICONS ------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.css"
+    />
+    <!---------------------- TOSTIFY CSS ------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <!---------------------- SWIPER CSS -------------------->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <!---------------------- CSS FOLDER -------------------->
+    <link rel="stylesheet" href="./css/home.css" />
   </head>
-  <body></body>
+  <body>
+    <!---------------------- Start Of Header -------------------->
+    <header class="header" id="header">
+      <!-------------------- LARGE SCREEN NAVBAR ---------------->
+      <nav class="nav-large-screen nav-container">
+        <!---------- LOGO ---------->
+        <a href="#" class="nav-logo">FableFolio</a>
+        <!---------- MENU ---------->
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a href="myBooks.html" class="nav-link">My Books </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Genres </a>
+            </li>
+            <li class="nav-item">
+              <a href="library.html" class="nav-link"> Discover </a>
+              <ul class="discover-dropdown">
+                <div class="discover-dropdown-links">
+                  <li><a href="#">Genres</a></li>
+                  <li><a href="#">New Releases</a></li>
+                  <li><a href="#">Lists</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">News & Interviews</a></li>
+                </div>
+                <div class="discover-dropdown-favoriteGenres">
+                  <h4>Favorite Genres</h4>
+                  <li><a href="#">Fantasy</a></li>
+                  <li><a href="#">Fiction</a></li>
+                  <li><a href="#">Psychology</a></li>
+                  <li><a href="#">Self Help</a></li>
+                  <li><a href="#">All Genres</a></li>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Blog </a>
+            </li>
+          </ul>
+        </div>
+        <!------- RIGHT SIDE ------->
+        <div class="nav-right">
+          <!-- <a href="#" class="nav-link">
+              <i class="ri-user-line"></i>
+              <span>Login</span>
+            </a>
+            <div class="nav-divider"></div> -->
+          <a href="profile.html" class="profile-pic">
+            <img src="./assets/profilePic.png" alt="profile-pic" />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-------------------- MEDIUM SCREEN NAVBAR ----------------->
+    <div class="nav-medium-screen">
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="myBooks.html" class="nav-link">My Books </a>
+          </li>
+          <!-- <li class="nav-item">
+              <a href="#" class="nav-link"> Genres </a>
+            </li> -->
+          <li class="nav-item">
+            <a href="library.html" class="nav-link"> Discover </a>
+            <!-- <ul class="discover-dropdown">
+                <div class="discover-dropdown-links">
+                  <li><a href="#">Genres</a></li>
+                  <li><a href="#">New Releases</a></li>
+                  <li><a href="#">Lists</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">News & Interviews</a></li>
+                </div>
+                <div class="discover-dropdown-favoriteGenres">
+                  <h4>Favorite Genres</h4>
+                  <li><a href="#">Fantasy</a></li>
+                  <li><a href="#">Fiction</a></li>
+                  <li><a href="#">Psychology</a></li>
+                  <li><a href="#">Cookbooks</a></li>
+                  <li><a href="#">Self Help</a></li>
+                  <li><a href="#">All Genres</a></li>
+                </div>
+              </ul> -->
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Blog </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-------------------- SMALL SCREEN NAVBAR ------------------>
+    <div class="nav-small-screen">
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="ri-home-3-line"></i>
+              <!-- <span>Home</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="myBooks.html" class="nav-link">
+              <i class="ri-bookmark-2-line"></i>
+              <!-- <span>My Books</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="library.html" class="nav-link">
+              <i class="ri-compass-line"></i>
+              <!-- <span>Discover</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="library.html" class="nav-link">
+              <i class="ri-search-line"></i>
+              <!-- <span>Search</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="ri-menu-line"></i>
+              <!-- <span>More</span> -->
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!---------------------- End Of Header ---------------------->
+    <main>
+      <!-------------------- Start Of Home Section -------------->
+      <section class="home section" id="home">
+        <div class="home-container container grid">
+          <div class="home-data">
+            <h1 class="home-title">Discover The World Of Books</h1>
+            <p class="home-description">
+              FableFolio is a digital platform that connects book lovers and
+              encourages them to share their favorite books. Our mission is to
+              help people discover new books, share insights, and find new
+              friends to read with.
+            </p>
+            <a href="#" class="button">Explore Now</a>
+          </div>
+          <div class="home-images">
+            <div class="home-swiper swiper">
+              <div class="swiper-wrapper">
+                <article class="home-article swiper-slide">
+                  <img
+                    src="./assets/homePage/homeSection/book1.webp"
+                    alt="book-image"
+                    class="home-image"
+                  />
+                </article>
+                <article class="home-article swiper-slide">
+                  <img
+                    src="./assets/homePage/homeSection/book2.webp"
+                    alt="book-image"
+                    class="home-image"
+                  />
+                </article>
+                <article class="home-article swiper-slide">
+                  <img
+                    src="./assets/homePage/homeSection/book4.webp"
+                    alt="book-image"
+                    class="home-image"
+                  />
+                </article>
+                <article class="home-article swiper-slide">
+                  <img
+                    src="./assets/homePage/homeSection/book3.webp"
+                    alt="book-image"
+                    class="home-image"
+                  />
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------------------- End Of Home Section ---------------->
+      <!-------------------- Start Of Saved Section ------------->
+      <section class="saved" id="saved">
+        <div class="saved-container container">
+          <div class="saved-data">
+            <h1 class="saved-title">Start Your Saved Reads Now</h1>
+            <a href="#" id="view-more-large" class="saved-button">View More</a>
+          </div>
+          <div class="saved-books swiper">
+            <div class="swiper-wrapper">
+              <div class="saved-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/topRatingSection/book1.webp"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">It Ends with Us</h1>
+                    <h2 class="book-author">Colleen Hoover</h2>
+                    <div class="card-bottom">
+                      <p>335 pages left</p>
+                      <div id="saved-icon">
+                        <i class="ri-bookmark-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat for more books -->
+              <div class="saved-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/topRatingSection/book1.webp"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">It Ends With Us</h1>
+                    <h2 class="book-author">Colleen Hoover</h2>
+                    <div class="card-bottom">
+                      <p>200 pages left</p>
+                      <div id="saved-icon">
+                        <i class="ri-bookmark-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <a href="#" id="view-more-small" class="saved-button">View More</a>
+        </div>
+      </section>
+      <!-------------------- End Of Saved Section --------------->
+      <!-------------------- Start Of Top Rating Section -------->
+      <section class="top-rating" id="top-rating">
+        <div class="top-rating-container container">
+          <div class="top-rating-data">
+            <h1 class="top-rating-title">Top Rating</h1>
+            <a href="#" id="view-more-large" class="top-rating-button"
+              >View More</a
+            >
+          </div>
+          <div class="top-rating-list">
+            <div class="top-rating-book-card">
+              <div id="save-icon"><i class="ri-bookmark-line"></i></div>
+              <div class="card-content">
+                <img
+                  src="./assets/homePage/topRatingSection/book1.jpg"
+                  alt="book-image"
+                  class="card-content-image"
+                />
+                <div class="card-content-data">
+                  <h1 class="book-title">
+                    Harry Potter and the Sorcerer’s Stone
+                  </h1>
+                  <h2 class="book-author">J.K. Rowling</h2>
+                  <div class="start-rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                  </div>
+                  <p class="book-description">
+                    "Turning the envelope over, his hand trembling, Harry saw a
+                    purple wax seal bearing a coat of arms; a lion, an eagle, a
+                    badger and a snake"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="top-rating-book-card">
+              <div id="save-icon"><i class="ri-bookmark-line"></i></div>
+              <div class="card-content">
+                <img
+                  src="./assets/homePage/topRatingSection/book2.jpg"
+                  alt="book-image"
+                  class="card-content-image"
+                />
+                <div class="card-content-data">
+                  <h1 class="book-title">1984</h1>
+                  <h2 class="book-author">George Orwell</h2>
+                  <div class="start-rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                  </div>
+                  <p class="book-description">
+                    A masterpiece of rebellion and imprisonment where war is
+                    peace freedom is slavery and Big Brother is watching.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="top-rating-book-card">
+              <div id="save-icon"><i class="ri-bookmark-line"></i></div>
+              <div class="card-content">
+                <img
+                  src="./assets/homePage/topRatingSection/book3.jpg"
+                  alt="book-image"
+                  class="card-content-image"
+                />
+                <div class="card-content-data">
+                  <h1 class="book-title">A Game of Thrones</h1>
+                  <h2 class="book-author">George R.R. Martin</h2>
+                  <div class="start-rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                  </div>
+                  <p class="book-description">
+                    Long ago, in a time forgotten, a preternatural event threw
+                    the seasons out of balance. In a land where summers can last
+                    decades and winters a lifetime..
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="top-rating-book-card">
+              <div id="save-icon"><i class="ri-bookmark-line"></i></div>
+              <div class="card-content">
+                <img
+                  src="./assets/homePage/topRatingSection/book4.jpg"
+                  alt="book-image"
+                  class="card-content-image"
+                />
+                <div class="card-content-data">
+                  <h1 class="book-title">The Alchemist</h1>
+                  <h2 class="book-author">Paulo Coelho</h2>
+                  <div class="start-rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <p class="book-description">
+                    Combining magic, mysticism, wisdom, and wonder into an
+                    inspiring tale of self-discovery, The Alchemist has become a
+                    modern classic, selling millions of copies around the world
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" id="view-more-small" class="top-rating-button"
+            >View More</a
+          >
+        </div>
+      </section>
+      <!-------------------- End Of Top Rating Section ---------->
+      <!-------------------- Start Of Offers Section ------------>
+      <section class="offers" id="offers">
+        <div class="offers-container container">
+          <h1 class="offers-title">Offers</h1>
+          <div class="offers-list">
+            <div class="offer-card">
+              <div class="card-content">
+                <div class="images-row">
+                  <img
+                    src="./assets/homePage/offersSection/book2.webp"
+                    alt="book-image"
+                    class="card-content-image"
+                  /><img
+                    src="./assets/homePage/offersSection/book5.webp"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                </div>
+                <div class="images-row">
+                  <img
+                    src="./assets/homePage/offersSection/book7.webp"
+                    alt="book-image"
+                    class="card-content-image"
+                    style="border-bottom-left-radius: 100%"
+                  /><img
+                    src="./assets/homePage/offersSection/book4.webp"
+                    alt="book-image"
+                    class="card-content-image"
+                    style="border-bottom-right-radius: 100%"
+                  />
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  font-size: 20px;
+                  font-weight: bold;
+                  text-align: center;
+                "
+              >
+                <p>This month's</p>
+                <p>discount is - 50%</p>
+              </div>
+            </div>
+            <div class="offer-card">
+              <div class="card-content">
+                <div class="images-row">
+                  <img
+                    src="./assets/homePage/offersSection/book10.webp"
+                    alt="book-image"
+                    class="card-content-image"
+                    style="border-top-left-radius: 100%"
+                  /><img
+                    src="./assets/homePage/offersSection/book6.webp"
+                    alt="book-image"
+                    class="card-content-image"
+                    style="border-top-right-radius: 100%"
+                  />
+                </div>
+                <div class="images-row">
+                  <img
+                    src="./assets/homePage/offersSection/book8.webp"
+                    alt="book-image"
+                    class="card-content-image"
+                  /><img
+                    src="./assets/homePage/offersSection/book3.webp"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  font-size: 20px;
+                  font-weight: bold;
+                  text-align: center;
+                "
+              >
+                <p>This month's</p>
+                <p>discount is - 30%</p>
+              </div>
+            </div>
+            <div class="offer-card">
+              <div class="card-content">
+                <div class="images-row">
+                  <img
+                    src="./assets/homePage/offersSection/book1.webp"
+                    alt="book-image"
+                    class="card-content-image"
+                  /><img
+                    src="./assets/homePage/offersSection/book9.webp"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                </div>
+                <div class="images-row">
+                  <img
+                    src="./assets/homePage/offersSection/book12.webp"
+                    alt="book-image"
+                    class="card-content-image"
+                    style="border-bottom-left-radius: 100%"
+                  /><img
+                    src="./assets/homePage/offersSection/book11.webp"
+                    alt="book-image"
+                    class="card-content-image"
+                    style="border-bottom-right-radius: 100%"
+                  />
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  font-size: 20px;
+                  font-weight: bold;
+                  text-align: center;
+                "
+              >
+                <p>This month's</p>
+                <p>discount is - 20%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------------------- End Of Offers Section -------------->
+      <!-------------------- Start Of News Section -------------->
+      <section class="news" id="news">
+        <div class="news-container container">
+          <div class="recommended-for-this-week">
+            <div class="left-side">
+              <img
+                src="./assets/homePage/newsSection/news.png"
+                alt="book-image"
+                class="news-image"
+              />
+              <div class="news-data">
+                <h1 class="news-title">
+                  7 New Books Recommended by Readers This Week
+                </h1>
+                <p class="news-description">
+                  Need another excuse to treat yourself to a new book this week?
+                  We’ve got you covered with the buzziest new releases of the
+                  day, according to early data from your fellow readers. To..
+                </p>
+                <p class="news-bottom">13 likes - 4 comments</p>
+              </div>
+            </div>
+            <div class="right-side">
+              <p>
+                Creature Feature: 128 New Books with Vampires, Witches, Ghosts,
+                and More!
+              </p>
+              <p>The Biggest Book-to-Screen Adaptations of 2024</p>
+              <p>The 78 Most Popular Horror Novels of the Past Five Years</p>
+              <a style="font-size: 24px; font-weight: bold; margin-top: 2rem"
+                >More news & interviews
+                <span><i class="ri-arrow-right-s-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="news-books swiper">
+            <h1 style="margin: 2rem 0; font-size: 30px">
+              Trending with FableFolio members
+            </h1>
+            <div class="swiper-wrapper">
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book1.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Phantasma</h1>
+                    <h2 class="book-author">Kaylie Smith</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.14</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book2.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">The Pumpkin Spice Café</h1>
+                    <h2 class="book-author">Laurie Gilmore</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>3.4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book3.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Don't Let the Forest In</h1>
+                    <h2 class="book-author">C.G. Drews</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.33</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book4.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">The Berry Pickers</h1>
+                    <h2 class="book-author">Amanda Peters</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.05</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book5.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Enchantra</h1>
+                    <h2 class="book-author">Kaylie Smith</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.56</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book6.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">We Used to Live Here</h1>
+                    <h2 class="book-author">Marcus Kliewer</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>3.77</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book7.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Society of Lies</h1>
+                    <h2 class="book-author">Lauren Ling Brown</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>3.58</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book8.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Lights Out</h1>
+                    <h2 class="book-author">Navessa Allen</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.28</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book9.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Anathema</h1>
+                    <h2 class="book-author">Keri Lake</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.14</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/homePage/newsSection/book10.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">The Housemaid</h1>
+                    <h2 class="book-author">Freida McFadden</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.32</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <!-------------------- End Of News Section ---------->
+    </main>
+    <footer></footer>
+    <!---------------------- SWIPER JS -------------------->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!---------------------- TOSTIFY JS ------------------->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/home.js"></script>
+  </body>
 </html>
