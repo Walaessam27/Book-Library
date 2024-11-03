@@ -85,11 +85,11 @@
   margin-bottom: 0.5rem;
 }
 
-#remove-icon {
+.remove-icon {
   position: absolute;
   top: 5px;
   right: 10px;
-  font-size: 28px;
+  font-size: 26px;
   color: #fed12e;
 }
 
@@ -102,7 +102,7 @@
 .my-books-list-card .card-content-image {
   box-shadow: -12px 5px 20px -8px rgba(0, 0, 0, 0.253);
   border-radius: 5px;
-  height: 150px;
+  height: 140px;
   width: 110px;
   object-fit: fill;
   background-color: yellow;
@@ -132,7 +132,7 @@
   margin-bottom: 0rem;
 }
 
-.my-books-list-card .card-content-data .mark-as-read-button {
+.want-to-read-button {
   width: 170px;
   height: 40px;
   background-color: #faf4e2;
@@ -147,8 +147,17 @@
   color: black;
 }
 
+/* .read-button {
+  background-color: #5cb85c;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+} */
+
 @media (min-width: 410px) {
-  #remove-icon {
+  .remove-icon {
     top: 10px;
   }
 }
@@ -176,7 +185,7 @@
   .my-books-list-card .card-content-data .book-author {
     font-size: 1.2rem;
   }
-  #remove-icon {
+  .remove-icon {
     top: 20px;
     right: 20px;
   }
@@ -197,5 +206,9 @@
   }
   .my-books-list {
     margin-right: 2rem;
+  }
+  .my-books-list-card .card-content-image {
+    height: 150px;
+    width: 110px;
   }
 }
