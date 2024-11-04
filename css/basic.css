@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Kalam:wght@300;400;700&family=Lilita+One&family=Roboto:ital,wght@1,100&display=swap");
 /*------------------------------------ SUB CSS FOLDERS  --------------------------------*/
 @import "../css/header.css";
+@import "../css/footer.css";
 @import "../css/toast.css";
 
 /*------------------------------------ VARIABLES ---------------------------------------*/

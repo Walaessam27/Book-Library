@@ -1,6 +1,6 @@
 const booksList = document.querySelector(".library-books-list");
 const searchInput = document.getElementById("searchInput");
-const books = JSON.parse(localStorage.getItem("books")) || [];
+const librarybooks = JSON.parse(localStorage.getItem("books")) || [];
 function loadBooks(books) {
   booksList.innerHTML = "";
   if (books.length > 0) {
@@ -56,6 +56,6 @@ function viewBook(index) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadBooks(books);
+  loadBooks(librarybooks);
   searchInput.addEventListener("input", searchBooks);
 });

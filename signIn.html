@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./css/log.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <script defer src="./js/log.js"></script>
+  </head>
+  <body>
+    <div class="container blurred-background">
+      <div class="blurred-background-content">
+        <h1>Welcome Back!</h1>
+        <p class="welcome-text">Log in to continue the reading!</p>
+
+        <div class="form-wrapper">
+          <!-- Sign In Form -->
+          <form id="sign-in-form" class="form">
+            <input
+              type="email"
+              id="signin-email"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="password"
+              id="signin-password"
+              placeholder="Password"
+              required
+            />
+            <button type="submit">Sign In</button>
+            <p class="feedback" id="signin-feedback"></p>
+            <p>New here? <a href="logup.html">Sign Up</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

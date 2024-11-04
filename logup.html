@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/log.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <script defer src="./js/log.js"></script>
+  </head>
+  <body>
+    <div class="container blurred-background">
+      <div class="blurred-background-content">
+        <h1>Join Us!</h1>
+        <p class="welcome-text">Create an account to start reading!</p>
+        <div class="form-wrapper">
+          <!-- Sign Up Form -->
+          <form id="sign-up-form" class="form">
+            <input
+              type="text"
+              id="signup-username"
+              placeholder="Username"
+              required
+            />
+            <input
+              type="email"
+              id="signup-email"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="password"
+              id="signup-password"
+              placeholder="Password"
+              required
+            />
+            <button type="submit">Sign Up</button>
+            <p class="feedback" id="signup-feedback"></p>
+            <p>Already have an account? <a href="./signin.html">Sign In</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

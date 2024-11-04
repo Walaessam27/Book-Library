@@ -9,11 +9,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.css"
     />
-    <!---------------------- TOSTIFY CSS ------------------->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
-    />
     <!---------------------- SWIPER CSS -------------------->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <!---------------------- CSS FOLDER -------------------->
@@ -210,54 +205,18 @@
         <div class="saved-container container">
           <div class="saved-data">
             <h1 class="saved-title">Start Your Saved Reads Now</h1>
-            <a href="#" id="view-more-large" class="saved-button">View More</a>
+            <a href="./myBooks.html" id="view-more-large" class="saved-button"
+              >View More</a
+            >
           </div>
           <div class="saved-books swiper">
-            <div class="swiper-wrapper">
-              <div class="saved-books-book-card swiper-slide">
-                <div class="card-content">
-                  <img
-                    src="./assets/homePage/topRatingSection/book1.webp"
-                    alt="book-image"
-                    class="card-content-image"
-                  />
-                  <div class="card-content-data">
-                    <h1 class="book-title">It Ends with Us</h1>
-                    <h2 class="book-author">Colleen Hoover</h2>
-                    <div class="card-bottom">
-                      <p>335 pages left</p>
-                      <div id="saved-icon">
-                        <i class="ri-bookmark-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Repeat for more books -->
-              <div class="saved-books-book-card swiper-slide">
-                <div class="card-content">
-                  <img
-                    src="./assets/homePage/topRatingSection/book1.webp"
-                    alt="book-image"
-                    class="card-content-image"
-                  />
-                  <div class="card-content-data">
-                    <h1 class="book-title">It Ends With Us</h1>
-                    <h2 class="book-author">Colleen Hoover</h2>
-                    <div class="card-bottom">
-                      <p>200 pages left</p>
-                      <div id="saved-icon">
-                        <i class="ri-bookmark-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="swiper-wrapper saved-books-swiper"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
-          <a href="#" id="view-more-small" class="saved-button">View More</a>
+          <a href="./myBooks.html" id="view-more-small" class="saved-button"
+            >View More</a
+          >
         </div>
       </section>
       <!-------------------- End Of Saved Section --------------->
@@ -280,9 +239,7 @@
                   class="card-content-image"
                 />
                 <div class="card-content-data">
-                  <h1 class="book-title">
-                    Harry Potter and the Sorcerer’s Stone
-                  </h1>
+                  <h1 class="book-title">Harry Potter</h1>
                   <h2 class="book-author">J.K. Rowling</h2>
                   <div class="start-rating">
                     <i class="ri-star-fill"></i>
@@ -334,7 +291,7 @@
                 />
                 <div class="card-content-data">
                   <h1 class="book-title">A Game of Thrones</h1>
-                  <h2 class="book-author">George R.R. Martin</h2>
+                  <h2 class="book-author">George Martin</h2>
                   <div class="start-rating">
                     <i class="ri-star-fill"></i>
                     <i class="ri-star-fill"></i>
@@ -728,13 +685,23 @@
           </div>
         </div>
       </section>
-      <!-------------------- End Of News Section ---------->
+      <!-------------------- End Of News Section ---------------->
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">FableFolio</div>
+        <div class="footer-copyright">
+          &copy; 2024 FableFolio. All rights reserved.
+        </div>
+        <div class="footer-social-media">
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+        </div>
+      </div>
+    </footer>
     <!---------------------- SWIPER JS -------------------->
     <script src="assets/js/swiper-bundle.min.js"></script>
-    <!---------------------- TOSTIFY JS ------------------->
-    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./js/home.js"></script>
   </body>
 </html>
