@@ -40,7 +40,7 @@ function searchBooks() {
   const query = searchInput.value.toLowerCase();
   console.log(query);
 
-  const filteredBooks = books.filter(
+  const filteredBooks = librarybooks.filter(
     (book) =>
       book.title.toLowerCase().includes(query) ||
       book.author.toLowerCase().includes(query) ||
