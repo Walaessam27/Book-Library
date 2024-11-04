@@ -65,6 +65,7 @@
 .library-books-container {
   margin: 0 3rem;
   border-bottom: solid 0.1px #e47a0146;
+  position: relative;
 }
 
 .library-books-container .library-books-list {
@@ -151,6 +152,18 @@
   gap: 10px;
 }
 
+.add-book {
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+  padding: 1rem;
+  background-color: #fc5000;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 50%;
+}
+
 /*------------------------------------ RESPONSIVE ---------------------------------------*/
 @media (max-width: 430px) {
   .library {
@@ -197,9 +210,9 @@
   .library-books-container .books-list-card .card-content .card-content-image {
     width: 70%;
   }
-}
-
-@media (max-width: 674px) {
+  .news {
+    margin-top: 1rem;
+  }
 }
 
 @media (min-width: 431px) and (max-width: 1023px) {

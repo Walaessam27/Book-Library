@@ -9,18 +9,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Merriweather:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
     <!---------------------- SWIPER CSS -------------------->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <!---------------------- CSS FOLDER -------------------->
@@ -161,227 +149,174 @@
       </div>
     </div>
     <!---------------------- End Of Header ---------------------->
-    <div class="container">
-      <header class="child1">
-        <h1>Agatha Christie</h1>
-        <img
-          src="images/download.jpeg"
-          alt="Agatha Christie"
-          class="img-fluid rounded-circle"
-          style="width: 150px; height: 150px"
-        />
-        <p class="about">
-          Agatha Christie, often called the "Queen of Mystery," is one of the
-          best-selling authors of all time. Her mystery novels, particularly
-          those featuring Hercule Poirot and Miss Marple, are celebrated
-          worldwide.
-        </p>
-        <p class="Nation">Nationality: British</p>
-        <p class="date">Date of Birth: September 15, 1890</p>
-      </header>
-
-      <main class="child2">
-        <h2 class="workAuthor">Author's works</h2>
-        <div
-          id="booksCarousel"
-          class="carousel slide carousel-fade"
-          data-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      src="images/book4.jpg"
-                      class="card-img-top"
-                      alt="Book 1"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Murder on the Orient Express</h5>
-                      <p class="card-text">
-                        A famous mystery novel featuring Hercule Poirot.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      src="images/book2.jpg"
-                      class="card-img-top"
-                      alt="Book 2"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">And Then There Were None</h5>
-                      <p class="card-text">
-                        Ten strangers are invited to an island, but they're
-                        being killed off one by one.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      src="images/book3.jpg"
-                      class="card-img-top"
-                      alt="Book 3"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">The Murder of Roger Ackroyd</h5>
-                      <p class="card-text">
-                        A classic detective story with a shocking twist.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      src="images/book4.jpg"
-                      class="card-img-top"
-                      alt="Book 4"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Death on the Nile</h5>
-                      <p class="card-text">
-                        A murder mystery set on a luxury cruise in Egypt.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      src="images/book5.jpg"
-                      class="card-img-top"
-                      alt="Book 5"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">The ABC Murders</h5>
-                      <p class="card-text">
-                        A serial killer is on the loose, and Hercule Poirot must
-                        stop him.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="card">
-                    <img
-                      src="images/book2.jpg"
-                      class="card-img-top"
-                      alt="Book 5"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">The ABC Murders</h5>
-                      <p class="card-text">
-                        A serial killer is on the loose, and Hercule Poirot must
-                        stop him.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#booksCarousel"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#booksCarousel"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+    <main class="main">
+      <div class="author">
+        <div class="author-image">
+          <img src="./assets/authorImage.jfif" alt="Agatha Christie" />
         </div>
-      </main>
-    </div>
-    <!-- <footer class="child4">footer</footer> -->
-    <footer class="footer child4 text-center py-3">
-      <div class="container1">
-        <!-- Social Media Icons -->
-        <div class="social-icons mb-3">
-          <a
-            href="https://facebook.com/OfficialAgathaChristie"
-            target="_blank"
-            class="icon"
-          >
-            <i class="fab fa-facebook fa-2x"></i>
-          </a>
-          <a
-            href="https://twitter.com/agathachristie"
-            target="_blank"
-            class="icon"
-          >
-            <i class="fab fa-twitter fa-2x"></i>
-          </a>
-          <a
-            href="https://instagram.com/agathachristieofficial"
-            target="_blank"
-            class="icon"
-          >
-            <i class="fab fa-instagram fa-2x"></i>
-          </a>
-        </div>
-
-        <!-- Short Quote -->
-        <p class="quote">
-          "Celebrating Agatha Christie's legacy in mystery and detective
-          literature."
-        </p>
-
-        <!-- Copyright -->
-        <p class="copyright">
-          © 2024 Agatha Christie Ltd. All rights reserved.
-        </p>
-      </div>
-    </footer>
-
-    <!-- FontAwesome for icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-
-    <!-- <main class="main">
-      <section class="library" id="library">
-        <div class="library-container container">
-          <h1 class="library-title">Read anywhere. Anytime.</h1>
-          <p class="library-description">
-            Welcome to FableFolio, where you can discover and read books from
-            all over the world. Our library has an extensive collection of
-            books, from classic novels to contemporary bestsellers.
+        <div class="author-info">
+          <h1>Agatha Christie</h1>
+          <p class="about">
+            Agatha Christie (1890–1976) is listed in the Guinness Book of World
+            Records as the bestselling novelist of all time. The first recipient
+            of the Mystery Writers of America’s Grand Master Award, she
+            published eighty mystery novels and many short story collections and
+            created such iconic fictional detectives as Hercule Poirot, Miss
+            Jane Marple, and Tommy and Tuppence Beresford. She is known around
+            the world as the Queen of Crime.
           </p>
-          <div class="search-bar">
-            <input type="text" placeholder="Search for books" />
-            <button type="submit">
-              <i class="ri-search-line"></i>
-            </button>
+        </div>
+      </div>
+      <!-------------------- Start Of News Section -------------->
+      <section class="news" id="news">
+        <div style="padding-top: 0" class="news-container container">
+          <div class="news-books swiper">
+            <h1 style="margin: 2rem 0; margin-top: 1rem; font-size: 30px">
+              Books by Agatha Christie
+            </h1>
+            <div class="swiper-wrapper">
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/authorPage/book1.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">The Murder on the Links</h1>
+                    <h2 class="book-author">Aghatha Cristie</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>3.87</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/authorPage/book2.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">And Then There Were None</h1>
+                    <h2 class="book-author">Agatha Christie</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.28</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/authorPage/book3.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Crooked House</h1>
+                    <h2 class="book-author">Agatha Christie</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.08</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/authorPage/book4.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Murder at the Vicarage</h1>
+                    <h2 class="book-author">Agatha Christie</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.05</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/authorPage/book5.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">A Caribbean Mystery</h1>
+                    <h2 class="book-author">Agatha Christie</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>3.84</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/authorPage/book6.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">The Mirror Crack'd from..</h1>
+                    <h2 class="book-author">Agatha Christie</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>3.95</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/authorPage/book7.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Sleeping Murder</h1>
+                    <h2 class="book-author">Agatha Christie</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>3.98</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
-          
         </div>
       </section>
-      
-    </main> -->
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!-------------------- End Of News Section ---------->
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">FableFolio</div>
+        <div class="footer-copyright">
+          &copy; 2024 FableFolio. All rights reserved.
+        </div>
+        <div class="footer-social-media">
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!---------------------- SWIPER JS -------------------->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="./js/home.js"></script>
   </body>
 </html>

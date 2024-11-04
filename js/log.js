@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         signInFeedback.textContent = "Password must be at least 6 characters.";
       } else {
         signInFeedback.textContent = "Sign in successful!";
+        window.location.href = `index.html`;
       }
     });
   }
